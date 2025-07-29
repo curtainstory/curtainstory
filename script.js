@@ -1603,7 +1603,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburgerBtn.setAttribute("aria-expanded", String(!expanded));
             hamburgerBtn.classList.toggle("active");
             if (navLinks) {
-                navLinks.classList.toggle("hidden"); // Toggle hidden class
+                navLinks.classList.toggle("active"); // Toggle hidden class
             }
         });
     }
