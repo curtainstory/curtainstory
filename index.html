@@ -3,44 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
     <title>Curtain Story - Discover Your Perfect Curtains</title>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
+    
+    <!-- Google Fonts: Inter & Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="antialiased">
+<body class="antialiased bg-gray-50">
 
     <!-- Header -->
-    <header class="navbar">
-        <nav class="container mx-auto flex justify-between items-center flex-wrap">
+    <header class="navbar py-2">
+        <nav class="container mx-auto flex justify-between items-center flex-wrap relative">
             <!-- Logo -->
             <a href="javascript:void(0)" onclick="showPage('home')" class="logo flex items-center">
                 <img src="https://placehold.co/150x50/caa56b/FFFFFF?text=Curtain+Story&font=inter" alt="Curtain Story Logo" class="h-12 w-auto object-contain">
             </a>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="hamburger md:hidden">
+            <button id="mobile-menu-button" class="hamburger md:hidden p-2">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <!-- Navigation Links -->
-            <div id="navigation-menu" class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-2 mt-4 md:mt-0 w-full md:w-auto nav-links">
+            <!-- 
+              FIX: Removed the 'hidden' class. 
+              Visibility on mobile is now controlled by the 'active' class toggled by JS and styled in style.css.
+              The 'md:flex' class ensures it's visible on desktop.
+            -->
+            <div id="navigation-menu" class="md:flex flex-col md:flex-row md:items-center md:space-x-2 w-full md:w-auto nav-links">
                 <a href="javascript:void(0)" onclick="showPage('home')" class="nav-link block py-2 px-4 text-gray-600 hover:bg-amber-50 hover:text-amber-600 font-medium rounded-lg transition duration-300">Home</a>
                 <a href="javascript:void(0)" onclick="showPage('fabrics')" class="nav-link block py-2 px-4 text-gray-600 hover:bg-amber-50 hover:text-amber-600 font-medium rounded-lg transition duration-300">Our Catalogues</a>
                 <a href="javascript:void(0)" onclick="showPage('services')" class="nav-link block py-2 px-4 text-gray-600 hover:bg-amber-50 hover:text-amber-600 font-medium rounded-lg transition duration-300">Design Services</a>
@@ -48,7 +48,7 @@
                 <a href="javascript:void(0)" onclick="showPage('about')" class="nav-link block py-2 px-4 text-gray-600 hover:bg-amber-50 hover:text-amber-600 font-medium rounded-lg transition duration-300">About Us</a>
                 <a href="javascript:void(0)" onclick="showPage('contact')" class="nav-link block py-2 px-4 text-gray-600 hover:bg-amber-50 hover:text-amber-600 font-medium rounded-lg transition duration-300">Contact Us</a>
                 <!-- CTA Button -->
-                <a href="https://wa.me/917417410714?text=Hello%20Curtain%20Story,%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" class="mt-4 md:mt-0 ml-0 md:ml-4 bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 btn btn--primary">
+                <a href="https://wa.me/917417410714?text=Hello%20Curtain%20Story,%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" class="mt-4 md:mt-0 ml-0 md:ml-4 bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
                     Book a Consultation
                 </a>
             </div>
@@ -58,30 +58,26 @@
     <!-- Main Content Area -->
     <main id="main-content-area">
         <!-- Hero Section -->
-        <section id="home" class="page-section hero flex items-center justify-center p-4 fade-in">
+        <section id="home" class="page-section hero flex items-center justify-center p-4">
             <div class="hero__overlay"></div>
-            <div class="hero__content relative z-10 text-white max-w-4xl mx-auto">
+            <div class="hero__content relative z-10 text-white max-w-4xl mx-auto text-center">
                 <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 drop-shadow-lg">
                     Weaving Your Perfect Story
                 </h1>
                 <p class="text-xl md:text-2xl mb-8 font-light drop-shadow">
                     Explore our exquisite collection of fabrics and bring your vision to life with personalized design.
                 </p>
-                <!-- Added description for consultation here -->
                 <div class="mb-8 text-lg font-medium text-center max-w-2xl mx-auto">
                     <h3 class="text-3xl font-bold leading-tight mb-4 drop-shadow-lg text-white">Schedule a Free Consultation</h3>
                     <p class="text-white leading-relaxed drop-shadow">
-                        Transform your living space with the perfect curtains, tailored just for you. At Curtain Story, we're delighted to offer a **complimentary consultation** for designing and stitching your curtains. We guide you to  measure your curtain size, and provide personalised recommendations that blend seamlessly with your interior décor.
-                    </p>
-                    <p class="text-white leading-relaxed drop-shadow">
-                        From selecting the ideal fabric and style to ensuring a perfect fit, we guide you through every step of the process. And to make your experience even more convenient, we provide **free delivery all over India**.
+                        Transform your living space with the perfect curtains, tailored just for you. At Curtain Story, we're delighted to offer a **complimentary consultation** for designing and stitching your curtains. We guide you to measure your curtain size, and provide personalised recommendations that blend seamlessly with your interior décor.
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="javascript:void(0)" onclick="showPage('fabrics')" class="btn btn--primary text-lg">
+                    <a href="javascript:void(0)" onclick="showPage('fabrics')" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full shadow-xl transition duration-300 transform hover:scale-105 text-lg">
                         Explore Our Catalogues
                     </a>
-                    <a href="https://wa.me/917417410714?text=Hello%20Curtain%20Story,%20I%20would%20like%20to%20schedule%20a%20design%20consultation." target="_blank" class="bg-white text-amber-500 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-xl transition duration-300 transform hover:scale-105 btn btn--secondary">
+                    <a href="https://wa.me/917417410714?text=Hello%20Curtain%20Story,%20I%20would%20like%20to%20schedule%20a%20design%20consultation." target="_blank" class="bg-white text-amber-500 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-xl transition duration-300 transform hover:scale-105">
                         Schedule a Consultation
                     </a>
                 </div>
@@ -89,105 +85,90 @@
         </section>
 
         <!-- Our Catalogues Section -->
-        <section id="fabrics" class="page-section container mx-auto py-20 px-4 md:px-8 fade-in">
+        <section id="fabrics" class="page-section container mx-auto py-20 px-4 md:px-8">
             <div class="text-center mb-16">
-                <h2 class="section-title text-4xl md:text-5xl font-extrabold text-gray-800">Our Exquisite Catalogues</h2>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800">Our Exquisite Catalogues</h2>
                 <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Discover the perfect texture, color, and pattern from our curated collections.</p>
             </div>
             <div id="catalogue-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- Catalogue cards will be dynamically inserted here by JavaScript -->
+                <!-- Catalogue cards will be dynamically inserted here -->
             </div>
         </section>
 
         <!-- Catalogue Details Section -->
-        <section id="catalogue-details" class="page-section container mx-auto py-20 px-4 md:px-8 fade-in">
-            <button onclick="showPage('fabrics')" class="mb-8 bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 transform hover:scale-105 inline-flex items-center btn btn--secondary">
+        <section id="catalogue-details" class="page-section container mx-auto py-20 px-4 md:px-8">
+            <button onclick="showPage('fabrics')" class="mb-8 bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 transform hover:scale-105 inline-flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>
                 Back to Catalogues
             </button>
             <h2 id="catalogue-detail-title" class="text-4xl font-bold text-center text-gray-800 mb-12"></h2>
             <div id="catalogue-design-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                <!-- Design images will be loaded here by JavaScript -->
+                <!-- Design images will be loaded here -->
             </div>
         </section>
 
         <!-- Design Services Section -->
-        <section id="services" class="page-section bg-white py-20 px-4 md:px-8 fade-in">
+        <section id="services" class="page-section bg-white py-20 px-4 md:px-8">
             <div class="container mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="section-title text-4xl md:text-5xl font-extrabold text-gray-800">Our Design Services</h2>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800">Our Design Services</h2>
                     <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">A seamless experience from consultation to installation, tailored just for you.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <!-- Service Card: Free Consultation -->
-                    <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:-translate-y-2 transition-transform duration-300 border border-gray-200 card">
+                    <!-- Service Cards -->
+                    <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:-translate-y-2 transition-transform duration-300 border border-gray-200">
                         <div class="text-amber-500 mb-4 inline-block p-4 bg-amber-100 rounded-full">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
                         </div>
                         <h3 class="text-2xl font-semibold text-gray-800 mb-4">Free Consultation</h3>
                         <p class="text-gray-600 leading-relaxed mb-6">Our experts visit your space to understand your needs and offer tailored recommendations, completely free of charge.</p>
-                        <a href="https://wa.me/917417410714?text=Hello%20Curtain%20Story,%20I%20would%20like%20to%20book%20a%20free%20consultation." target="_blank" class="btn btn--primary">
-                            Book Now
-                        </a>
                     </div>
-
-                    <!-- Service Card: Custom Design & Tailoring -->
-                    <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:-translate-y-2 transition-transform duration-300 border border-gray-200 card">
+                    <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:-translate-y-2 transition-transform duration-300 border border-gray-200">
                         <div class="text-amber-500 mb-4 inline-block p-4 bg-amber-100 rounded-full">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                         </div>
                         <h3 class="text-2xl font-semibold text-gray-800 mb-4">Custom Design & Tailoring</h3>
                         <p class="text-gray-600 leading-relaxed mb-6">From classic to contemporary, we custom-tailor curtains and blinds to perfectly match your interior style.</p>
-                        <a href="https://wa.me/917417410714?text=Hello%20Curtain%20Story,%20I%20would%20like%20to%20know%20more%20about%20custom%20design." target="_blank" class="btn btn--primary">
-                            Learn More
-                        </a>
                     </div>
-
-                    <!-- Service Card: Professional Installation -->
-                    <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:-translate-y-2 transition-transform duration-300 border border-gray-200 card">
+                    <div class="bg-gray-50 rounded-xl shadow-lg p-8 text-center transform hover:-translate-y-2 transition-transform duration-300 border border-gray-200">
                         <div class="text-amber-500 mb-4 inline-block p-4 bg-amber-100 rounded-full">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
                         </div>
                         <h3 class="text-2xl font-semibold text-gray-800 mb-4">Professional Installation</h3>
                         <p class="text-gray-600 leading-relaxed mb-6">Our skilled team ensures a flawless and efficient installation, guaranteeing a perfect finish every time.</p>
-                        <a href="https://wa.me/917417410714?text=Hello%20Curtain%20Story,%20I%20would%20like%20to%20know%20more%20about%20installation." target="_blank" class="btn btn--primary">
-                            Details
-                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Portfolio Section -->
-        <section id="portfolio" class="page-section bg-gray-100 py-20 px-4 md:px-8 fade-in">
+        <section id="portfolio" class="page-section bg-gray-100 py-20 px-4 md:px-8">
             <div class="container mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="section-title text-4xl md:text-5xl font-extrabold text-gray-800">Our Latest Creations</h2>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800">Our Latest Creations</h2>
                     <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Browse through our recent projects and find inspiration for your own space.</p>
                 </div>
                 <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Portfolio items will be dynamically inserted here by JavaScript -->
+                    <!-- Portfolio items will be dynamically inserted here -->
                 </div>
             </div>
         </section>
 
         <!-- About Us Section -->
-        <section id="about" class="page-section bg-white py-20 px-4 md:px-8 fade-in">
+        <section id="about" class="page-section bg-white py-20 px-4 md:px-8">
             <div class="container mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="section-title text-4xl md:text-5xl font-extrabold text-gray-800">About Curtain Story</h2>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800">About Curtain Story</h2>
                     <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Crafting beautiful spaces, one curtain at a time.</p>
                 </div>
-                <div class="about-grid grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div class="about-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
                         <h3 class="text-3xl font-bold text-gray-800 mb-6">Our Passion for Perfection</h3>
                         <p class="text-lg text-gray-700 leading-relaxed mb-6">At Curtain Story, we believe that curtains are more than just window dressings; they are an integral part of your home's narrative. With years of expertise, we specialize in creating custom window treatments that blend functionality with exquisite design.</p>
-                        <p class="text-lg text-gray-700 leading-relaxed mb-6">Our commitment to quality is evident in every stitch. We source the finest fabrics, employ skilled artisans, and utilize precision tailoring to ensure each product meets the highest standards of craftsmanship and durability.</p>
                         <p class="text-lg text-gray-700 leading-relaxed">We're dedicated to transforming your vision into reality, offering personalized consultations and a seamless process from selection to installation. Let us help you tell your perfect curtain story.</p>
                     </div>
-                    <div class="about-image relative">
-                        <!-- Updated image source to the Unsplash URL -->
-                        <img src="https://images.unsplash.com/photo-1674074793877-0094bbb45c1c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A black and white photo of a building with a sign that says we care" class="rounded-lg shadow-xl w-full h-auto">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1674074793877-0094bbb45c1c?q=80&w=2070&auto=format&fit=crop" alt="A black and white photo of a building with a sign that says we care" class="rounded-lg shadow-xl w-full h-auto">
                         <div class="absolute inset-0 bg-amber-500 opacity-20 rounded-lg"></div>
                     </div>
                 </div>
@@ -195,10 +176,10 @@
         </section>
 
         <!-- Contact Us Section -->
-        <section id="contact" class="page-section bg-gray-50 py-20 px-4 md:px-8 fade-in">
+        <section id="contact" class="page-section bg-gray-50 py-20 px-4 md:px-8">
             <div class="container mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="section-title text-4xl md:text-5xl font-extrabold text-gray-800">Get in Touch</h2>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800">Get in Touch</h2>
                     <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Have a question or need a consultation? We're here to help.</p>
                 </div>
                 <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -206,6 +187,7 @@
                     <div>
                         <h3 class="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h3>
                         <form id="contact-form" class="space-y-4">
+                            <!-- Form fields -->
                             <div>
                                 <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
                                 <input type="text" id="name" name="name" required class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-200">
@@ -215,39 +197,27 @@
                                 <input type="email" id="email" name="email" required class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-200">
                             </div>
                             <div>
-                                <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone (Optional)</label>
-                                <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-200">
-                            </div>
-                            <div>
                                 <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
                                 <textarea id="message" name="message" rows="5" required class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition duration-200"></textarea>
                             </div>
-                            <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105 btn btn--primary">
+                            <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105">
                                 Send Message
                             </button>
                         </form>
                     </div>
-
-                    <!-- Contact Information -->
+                    <!-- Contact Info -->
                     <div>
                         <h3 class="text-2xl font-bold text-gray-800 mb-6">Our Details</h3>
                         <div class="space-y-4 text-gray-700 text-lg">
                             <p class="flex items-center"><i class="fas fa-map-marker-alt text-amber-500 mr-3"></i> UK , India</p>
                             <p class="flex items-center"><i class="fas fa-phone text-amber-500 mr-3"></i> +91 7417410714</p>
                             <p class="flex items-center"><i class="fas fa-envelope text-amber-500 mr-3"></i> info@curtainstory.com</p>
-                            <p class="flex items-center"><i class="fas fa-clock text-amber-500 mr-3"></i> Mon-Sat: 9:00 AM - 9:00 PM</p>
                         </div>
                         <div class="mt-8">
                             <h4 class="text-xl font-bold text-gray-800 mb-4">Find us on Social Media</h4>
                             <div class="flex space-x-4">
-                                <!-- Updated Facebook link -->
-                                <a href="https://www.facebook.com/profile.php?id=61577190459296" target="_blank" class="text-gray-600 hover:text-amber-500 transition duration-300 text-2xl">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <!-- Updated Instagram link -->
-                                <a href="https://www.instagram.com/curtainstory.info/" target="_blank" class="text-gray-600 hover:text-amber-500 transition duration-300 text-2xl">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=61577190459296" target="_blank" class="text-gray-600 hover:text-amber-500 transition duration-300 text-2xl"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/curtainstory.info/" target="_blank" class="text-gray-600 hover:text-amber-500 transition duration-300 text-2xl"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -259,21 +229,14 @@
     <!-- Image Modal Structure -->
     <div id="image-modal" class="modal-overlay hidden">
         <div class="modal-content">
-            <button id="modal-close-button" class="modal-close-button">
-                &times;
-            </button>
+            <button id="modal-close-button" class="modal-close-button">&times;</button>
             <div class="modal-image-container">
                 <img id="modal-image" class="modal-image" src="" alt="Enlarged View">
             </div>
-            <!-- Navigation buttons and image counter -->
             <div class="modal-nav-controls">
-                <button id="modal-prev-button" class="modal-nav-button prev-button">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
+                <button id="modal-prev-button" class="modal-nav-button"><i class="fas fa-chevron-left"></i></button>
                 <span id="modal-image-counter" class="modal-image-counter"></span>
-                <button id="modal-next-button" class="modal-nav-button next-button">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+                <button id="modal-next-button" class="modal-nav-button"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </div>
@@ -288,23 +251,17 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer py-12 px-6 md:px-12 text-center">
+    <footer class="bg-gray-800 text-white py-12 px-6 md:px-12 text-center">
         <div class="container mx-auto">
             <div class="mb-6">
                 <h3 class="text-3xl font-bold">Curtain Story</h3>
-                <p class="mt-2">Weaving Your Perfect Story</p>
+                <p class="mt-2 text-gray-400">Weaving Your Perfect Story</p>
             </div>
-            <div class="flex justify-center space-x-6 mb-8 social-links">
-                <!-- Updated Facebook link in footer -->
-                <a href="https://www.facebook.com/profile.php?id=61577190459296" target="_blank" class="transition duration-300">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <!-- Updated Instagram link in footer -->
-                <a href="https://www.instagram.com/curtainstory.info/" target="_blank" class="transition duration-300">
-                    <i class="fab fa-instagram"></i>
-                </a>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://www.facebook.com/profile.php?id=61577190459296" target="_blank" class="hover:text-amber-400 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/curtainstory.info/" target="_blank" class="hover:text-amber-400 transition duration-300"><i class="fab fa-instagram"></i></a>
             </div>
-            <p class="text-sm">&copy; <span id="current-year"></span> Curtain Story. All rights reserved.</p>
+            <p class="text-sm text-gray-500">&copy; <span id="current-year"></span> Curtain Story. All rights reserved.</p>
         </div>
     </footer>
 
