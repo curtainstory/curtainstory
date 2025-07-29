@@ -273,7 +273,7 @@ const catalogues = [
             326: 'https://freeimage.host/i/Jv7EGc7',
             327: 'https://freeimage.host/i/Jv7EHd8',
             328: 'https://freeimage.host/i/Jv7EIe9',
-            329: 'https://freeimage.host/i/Jv7EJg0',
+            329: 'https://freeimage.host/i/Jv7EJf0',
             330: 'https://freeimage.host/i/Jv7EKk1',
             331: 'https://freeimage.host/i/Jv7ELl2',
             332: 'https://freeimage.host/i/Jv7EMm3',
@@ -289,945 +289,1301 @@ const catalogues = [
             342: 'https://freeimage.host/i/Jv7EWm3'
         }
     },
-    // Deluxe with Freeimage.host URLs
+    // Cherry with Freeimage.host URLs
     {
-        name: 'Deluxe',
-        description: 'Premium collection with luxurious fabrics and rich designs.',
-        codes: Array.from({length: 40}, (_, i) => 801 + i),
-        color: 'fef2f2',
+        name: 'Cherry',
+        description: 'Rich, warm tones for a touch of cozy elegance.',
+        codes: Array.from({length: 44}, (_, i) => 1401 + i),
+        color: 'fee2e2',
         specificImages: {
-            801: 'https://freeimage.host/i/Jv7F1jR',
-            802: 'https://freeimage.host/i/Jv7F8uX',
-            803: 'https://freeimage.host/i/Jv7Fk4u',
-            804: 'https://freeimage.host/i/Jv7FgBQ',
-            805: 'https://freeimage.host/i/Jv7Ff0P',
-            806: 'https://freeimage.host/i/Jv7Fd7S',
-            807: 'https://freeimage.host/i/Jv7FjYF',
-            808: 'https://freeimage.host/i/Jv7FJuV',
-            809: 'https://freeimage.host/i/Jv7FOdg',
-            810: 'https://freeimage.host/i/Jv7FQW1',
-            811: 'https://freeimage.host/i/Jv7FRkZ',
-            812: 'https://freeimage.host/i/Jv7F2wB',
-            813: 'https://freeimage.host/i/Jv7F3pN',
-            814: 'https://freeimage.host/i/Jv7F4bQ',
-            815: 'https://freeimage.host/i/Jv7F5rS',
-            816: 'https://freeimage.host/i/Jv7F6gT',
-            817: 'https://freeimage.host/i/Jv7F7uV',
-            818: 'https://freeimage.host/i/Jv7F9wX',
-            819: 'https://freeimage.host/i/Jv7F0yZ',
-            820: 'https://freeimage.host/i/Jv7FAz1',
-            821: 'https://freeimage.host/i/Jv7FBX2',
-            822: 'https://freeimage.host/i/Jv7FCY3',
-            823: 'https://freeimage.host/i/Jv7FDZ4',
-            824: 'https://freeimage.host/i/Jv7FEX5',
-            825: 'https://freeimage.host/i/Jv7FFb6',
-            826: 'https://freeimage.host/i/Jv7FGc7',
-            827: 'https://freeimage.host/i/Jv7FHd8',
-            828: 'https://freeimage.host/i/Jv7FIe9',
-            829: 'https://freeimage.host/i/Jv7FJg0',
-            830: 'https://freeimage.host/i/Jv7FKk1',
-            831: 'https://freeimage.host/i/Jv7FLl2',
-            832: 'https://freeimage.host/i/Jv7FMm3',
-            833: 'https://freeimage.host/i/Jv7FNn4',
-            834: 'https://freeimage.host/i/Jv7FOo5',
-            835: 'https://freeimage.host/i/Jv7FPp6',
-            836: 'https://freeimage.host/i/Jv7FQg7',
-            837: 'https://freeimage.host/i/Jv7FRh8',
-            838: 'https://freeimage.host/i/Jv7FSi9',
-            839: 'https://freeimage.host/i/Jv7FTj0',
-            840: 'https://freeimage.host/i/Jv7FUk1'
+            1401: 'https://freeimage.host/i/Jv7F1jR',
+            1402: 'https://freeimage.host/i/Jv7F8uX',
+            1403: 'https://freeimage.host/i/Jv7Fk4u',
+            1404: 'https://freeimage.host/i/Jv7FgBQ',
+            1405: 'https://freeimage.host/i/Jv7Ff0P',
+            1406: 'https://freeimage.host/i/Jv7Fd7S',
+            1407: 'https://freeimage.host/i/Jv7FjYF',
+            1408: 'https://freeimage.host/i/Jv7FJuV',
+            1409: 'https://freeimage.host/i/Jv7FOdg',
+            1410: 'https://freeimage.host/i/Jv7FQW1',
+            1411: 'https://freeimage.host/i/Jv7FRkZ',
+            1412: 'https://freeimage.host/i/Jv7F2wB',
+            1413: 'https://freeimage.host/i/Jv7F3pN',
+            1414: 'https://freeimage.host/i/Jv7F4bQ',
+            1415: 'https://freeimage.host/i/Jv7F5rS',
+            1416: 'https://freeimage.host/i/Jv7F6gT',
+            1417: 'https://freeimage.host/i/Jv7F7uV',
+            1418: 'https://freeimage.host/i/Jv7F9wX',
+            1419: 'https://freeimage.host/i/Jv7F0yZ',
+            1420: 'https://freeimage.host/i/Jv7FAz1',
+            1421: 'https://freeimage.host/i/Jv7FBX2',
+            1422: 'https://freeimage.host/i/Jv7FCY3',
+            1423: 'https://freeimage.host/i/Jv7FDZ4',
+            1424: 'https://freeimage.host/i/Jv7FEX5',
+            1425: 'https://freeimage.host/i/Jv7FFb6',
+            1426: 'https://freeimage.host/i/Jv7FGc7',
+            1427: 'https://freeimage.host/i/Jv7FHd8',
+            1428: 'https://freeimage.host/i/Jv7FIe9',
+            1429: 'https://freeimage.host/i/Jv7FJf0',
+            1430: 'https://freeimage.host/i/Jv7FKk1',
+            1431: 'https://freeimage.host/i/Jv7FLl2',
+            1432: 'https://freeimage.host/i/Jv7FMm3',
+            1433: 'https://freeimage.host/i/Jv7FNn4',
+            1434: 'https://freeimage.host/i/Jv7FOo5',
+            1435: 'https://freeimage.host/i/Jv7FPp6',
+            1436: 'https://freeimage.host/i/Jv7FQg7',
+            1437: 'https://freeimage.host/i/Jv7FRh8',
+            1438: 'https://freeimage.host/i/Jv7FSi9',
+            1439: 'https://freeimage.host/i/Jv7FTj0',
+            1440: 'https://freeimage.host/i/Jv7FUk1',
+            1441: 'https://freeimage.host/i/Jv7FVl2',
+            1442: 'https://freeimage.host/i/Jv7FWm3',
+            1443: 'https://freeimage.host/i/Jv7FXn4',
+            1444: 'https://freeimage.host/i/Jv7FYp5'
         }
     },
-    // Fusion with Freeimage.host URLs
+    // Updated Autumn with Freeimage.host URLs
     {
-        name: 'Fusion',
-        description: 'A blend of modern and traditional designs, offering versatile options.',
-        codes: Array.from({length: 40}, (_, i) => 101 + i),
-        color: 'ebf4ff',
+        name: 'Autumn',
+        description: 'Warm, earthy tones and rich textures inspired by the fall season.',
+        codes: Array.from({length: 49}, (_, i) => 1801 + i),
+        color: 'e69a5b',
         specificImages: {
-            101: 'https://freeimage.host/i/Jv7Y1jR',
-            102: 'https://freeimage.host/i/Jv7Y8uX',
-            103: 'https://freeimage.host/i/Jv7Yk4u',
-            104: 'https://freeimage.host/i/Jv7YgBQ',
-            105: 'https://freeimage.host/i/Jv7Yf0P',
-            106: 'https://freeimage.host/i/Jv7Yd7S',
-            107: 'https://freeimage.host/i/Jv7YjYF',
-            108: 'https://freeimage.host/i/Jv7YJuV',
-            109: 'https://freeimage.host/i/Jv7YOdg',
-            110: 'https://freeimage.host/i/Jv7YQW1',
-            111: 'https://freeimage.host/i/Jv7YRkZ',
-            112: 'https://freeimage.host/i/Jv7Y2wB',
-            113: 'https://freeimage.host/i/Jv7Y3pN',
-            114: 'https://freeimage.host/i/Jv7Y4bQ',
-            115: 'https://freeimage.host/i/Jv7Y5rS',
-            116: 'https://freeimage.host/i/Jv7Y6gT',
-            117: 'https://freeimage.host/i/Jv7Y7uV',
-            118: 'https://freeimage.host/i/Jv7Y9wX',
-            119: 'https://freeimage.host/i/Jv7Y0yZ',
-            120: 'https://freeimage.host/i/Jv7YAz1',
-            121: 'https://freeimage.host/i/Jv7YBX2',
-            122: 'https://freeimage.host/i/Jv7YCY3',
-            123: 'https://freeimage.host/i/Jv7YDZ4',
-            124: 'https://freeimage.host/i/Jv7YEX5',
-            125: 'https://freeimage.host/i/Jv7YFb6',
-            126: 'https://freeimage.host/i/Jv7YGc7',
-            127: 'https://freeimage.host/i/Jv7YHd8',
-            128: 'https://freeimage.host/i/Jv7YIe9',
-            129: 'https://freeimage.host/i/Jv7YJf0',
-            130: 'https://freeimage.host/i/Jv7YKk1',
-            131: 'https://freeimage.host/i/Jv7YLl2',
-            132: 'https://freeimage.host/i/Jv7YMm3',
-            133: 'https://freeimage.host/i/Jv7YNn4',
-            134: 'https://freeimage.host/i/Jv7YOo5',
-            135: 'https://freeimage.host/i/Jv7YPp6',
-            136: 'https://freeimage.host/i/Jv7YQg7',
-            137: 'https://freeimage.host/i/Jv7YRh8',
-            138: 'https://freeimage.host/i/Jv7YSi9',
-            139: 'https://freeimage.host/i/Jv7YTj0',
-            140: 'https://freeimage.host/i/Jv7YUk1'
+            1801: 'https://freeimage.host/i/Jv7G1jR',
+            1802: 'https://freeimage.host/i/Jv7G8uX',
+            1803: 'https://freeimage.host/i/Jv7Gk4u',
+            1804: 'https://freeimage.host/i/Jv7GgBQ',
+            1805: 'https://freeimage.host/i/Jv7Gf0P',
+            1806: 'https://freeimage.host/i/Jv7Gd7S',
+            1807: 'https://freeimage.host/i/Jv7GjYF',
+            1808: 'https://freeimage.host/i/Jv7GJuV',
+            1809: 'https://freeimage.host/i/Jv7GOdg',
+            1810: 'https://freeimage.host/i/Jv7GQW1',
+            1811: 'https://freeimage.host/i/Jv7GRkZ',
+            1812: 'https://freeimage.host/i/Jv7G2wB',
+            1813: 'https://freeimage.host/i/Jv7G3pN',
+            1814: 'https://freeimage.host/i/Jv7G4bQ',
+            1815: 'https://freeimage.host/i/Jv7G5rS',
+            1816: 'https://freeimage.host/i/Jv7G6gT',
+            1817: 'https://freeimage.host/i/Jv7G7uV',
+            1818: 'https://freeimage.host/i/Jv7G9wX',
+            1819: 'https://freeimage.host/i/Jv7G0yZ',
+            1820: 'https://freeimage.host/i/Jv7GAz1',
+            1821: 'https://freeimage.host/i/Jv7GBX2',
+            1822: 'https://freeimage.host/i/Jv7GCY3',
+            1823: 'https://freeimage.host/i/Jv7GDZ4',
+            1824: 'https://freeimage.host/i/Jv7GEX5',
+            1825: 'https://freeimage.host/i/Jv7GFb6',
+            1826: 'https://freeimage.host/i/Jv7GGc7',
+            1827: 'https://freeimage.host/i/Jv7GHd8',
+            1828: 'https://freeimage.host/i/Jv7GIe9',
+            1829: 'https://freeimage.host/i/Jv7GJf0',
+            1830: 'https://freeimage.host/i/Jv7GKk1',
+            1831: 'https://freeimage.host/i/Jv7GLl2',
+            1832: 'https://freeimage.host/i/Jv7GMm3',
+            1833: 'https://freeimage.host/i/Jv7GNn4',
+            1834: 'https://freeimage.host/i/Jv7GOo5',
+            1835: 'https://freeimage.host/i/Jv7GPp6',
+            1836: 'https://freeimage.host/i/Jv7GQg7',
+            1837: 'https://freeimage.host/i/Jv7GRh8',
+            1838: 'https://freeimage.host/i/Jv7GSi9',
+            1839: 'https://freeimage.host/i/Jv7GTj0',
+            1840: 'https://freeimage.host/i/Jv7GUk1',
+            1841: 'https://freeimage.host/i/Jv7GVl2',
+            1842: 'https://freeimage.host/i/Jv7GWm3',
+            1843: 'https://freeimage.host/i/Jv7GXn4',
+            1844: 'https://freeimage.host/i/Jv7GYo5',
+            1845: 'https://freeimage.host/i/Jv7GZp6',
+            1846: 'https://freeimage.host/i/Jv7Gaq7',
+            1847: 'https://freeimage.host/i/Jv7Gbr8',
+            1848: 'https://freeimage.host/i/Jv7Gcs9',
+            1849: 'https://freeimage.host/i/Jv7Gdt0'
         }
     },
-    // Galaxy with Freeimage.host URLs
     {
-        name: 'Galaxy',
-        description: 'Sparkling designs that bring the night sky into your home.',
-        codes: Array.from({length: 48}, (_, i) => 2001 + i),
-        color: 'e0e7ff',
+        name: 'Feather', 
+        description: 'Lightweight and airy fabrics with a delicate, soft touch.', 
+        codes: Array.from({length: 36}, (_, i) => 1601 + i), 
+        color: 'e0f2fe',
         specificImages: {
-            2001: 'https://freeimage.host/i/Jv7U1jR',
-            2002: 'https://freeimage.host/i/Jv7U8uX',
-            2003: 'https://freeimage.host/i/Jv7Uk4u',
-            2004: 'https://freeimage.host/i/Jv7UgBQ',
-            2005: 'https://freeimage.host/i/Jv7Uf0P',
-            2006: 'https://freeimage.host/i/Jv7Ud7S',
-            2007: 'https://freeimage.host/i/Jv7UjYF',
-            2008: 'https://freeimage.host/i/Jv7UJuV',
-            2009: 'https://freeimage.host/i/Jv7UOdg',
-            2010: 'https://freeimage.host/i/Jv7UQW1',
-            2011: 'https://freeimage.host/i/Jv7URkZ',
-            2012: 'https://freeimage.host/i/Jv7U2wB',
-            2013: 'https://freeimage.host/i/Jv7U3pN',
-            2014: 'https://freeimage.host/i/Jv7U4bQ',
-            2015: 'https://freeimage.host/i/Jv7U5rS',
-            2016: 'https://freeimage.host/i/Jv7U6gT',
-            2017: 'https://freeimage.host/i/Jv7U7uV',
-            2018: 'https://freeimage.host/i/Jv7U9wX',
-            2019: 'https://freeimage.host/i/Jv7U0yZ',
-            2020: 'https://freeimage.host/i/Jv7UAz1',
-            2021: 'https://freeimage.host/i/Jv7UBX2',
-            2022: 'https://freeimage.host/i/Jv7UCY3',
-            2023: 'https://freeimage.host/i/Jv7UDZ4',
-            2024: 'https://freeimage.host/i/Jv7UEX5',
-            2025: 'https://freeimage.host/i/Jv7UFb6',
-            2026: 'https://freeimage.host/i/Jv7UGc7',
-            2027: 'https://freeimage.host/i/Jv7UHd8',
-            2028: 'https://freeimage.host/i/Jv7UIe9',
-            2029: 'https://freeimage.host/i/Jv7UJg0',
-            2030: 'https://freeimage.host/i/Jv7UKk1',
-            2031: 'https://freeimage.host/i/Jv7ULl2',
-            2032: 'https://freeimage.host/i/Jv7UMm3',
-            2033: 'https://freeimage.host/i/Jv7UNn4',
-            2034: 'https://freeimage.host/i/Jv7UOo5',
-            2035: 'https://freeimage.host/i/Jv7UPp6',
-            2036: 'https://freeimage.host/i/Jv7UQg7',
-            2037: 'https://freeimage.host/i/Jv7URh8',
-            2038: 'https://freeimage.host/i/Jv7USi9',
-            2039: 'https://freeimage.host/i/Jv7UTj0',
-            2040: 'https://freeimage.host/i/Jv7UUj1',
-            2041: 'https://freeimage.host/i/Jv7UVl2',
-            2042: 'https://freeimage.host/i/Jv7UWw3',
-            2043: 'https://freeimage.host/i/Jv7UXx4',
-            2044: 'https://freeimage.host/i/Jv7UYy5',
-            2045: 'https://freeimage.host/i/Jv7UZz6',
-            2046: 'https://freeimage.host/i/Jv7UaA7',
-            2047: 'https://freeimage.host/i/Jv7UbB8',
-            2048: 'https://freeimage.host/i/Jv7UcC9'
+            1601: 'https://freeimage.host/i/Jv7H1jR',
+            1602: 'https://freeimage.host/i/Jv7H8uX',
+            1603: 'https://freeimage.host/i/Jv7Hk4u',
+            1604: 'https://freeimage.host/i/Jv7HgBQ',
+            1605: 'https://freeimage.host/i/Jv7Hf0P',
+            1606: 'https://freeimage.host/i/Jv7Hd7S',
+            1607: 'https://freeimage.host/i/Jv7HjYF',
+            1608: 'https://freeimage.host/i/Jv7HJuV',
+            1609: 'https://freeimage.host/i/Jv7HOdg',
+            1610: 'https://freeimage.host/i/Jv7HQW1',
+            1611: 'https://freeimage.host/i/Jv7HRkZ',
+            1612: 'https://freeimage.host/i/Jv7H2wB',
+            1613: 'https://freeimage.host/i/Jv7H3pN',
+            1614: 'https://freeimage.host/i/Jv7H4bQ',
+            1615: 'https://freeimage.host/i/Jv7H5rS',
+            1616: 'https://freeimage.host/i/Jv7H6gT',
+            1617: 'https://freeimage.host/i/Jv7H7uV',
+            1618: 'https://freeimage.host/i/Jv7H9wX',
+            1619: 'https://freeimage.host/i/Jv7H0yZ',
+            1620: 'https://freeimage.host/i/Jv7HAz1',
+            1621: 'https://freeimage.host/i/Jv7HBX2',
+            1622: 'https://freeimage.host/i/Jv7HCY3',
+            1623: 'https://freeimage.host/i/Jv7HDZ4',
+            1624: 'https://freeimage.host/i/Jv7HEX5',
+            1625: 'https://freeimage.host/i/Jv7HFb6',
+            1626: 'https://freeimage.host/i/Jv7HGc7',
+            1627: 'https://freeimage.host/i/Jv7HHd8',
+            1628: 'https://freeimage.host/i/Jv7HIe9',
+            1629: 'https://freeimage.host/i/Jv7HJf0',
+            1630: 'https://freeimage.host/i/Jv7HKk1',
+            1631: 'https://freeimage.host/i/Jv7HLl2',
+            1632: 'https://freeimage.host/i/Jv7HMm3',
+            1633: 'https://freeimage.host/i/Jv7HNn4',
+            1634: 'https://freeimage.host/i/Jv7HOo5',
+            1635: 'https://freeimage.host/i/Jv7HPp6',
+            1636: 'https://freeimage.host/i/Jv7HQg7'
         }
     },
-    // Modern with Freeimage.host URLs
+      
+    // Glory with Freeimage.host URLs
     {
-        name: 'Modern',
-        description: 'Clean lines and contemporary patterns for a sleek look.',
-        codes: Array.from({length: 30}, (_, i) => 1001 + i),
-        color: 'dbeafe',
+        name: 'Glory',
+        description: 'Fabrics that bring a sense of grandeur and timeless beauty.',
+        codes: Array.from({length: 32}, (_, i) => 1701 + i),
+        color: 'fdd6e0',
         specificImages: {
-            1001: 'https://freeimage.host/i/Jv7G1jR',
-            1002: 'https://freeimage.host/i/Jv7G8uX',
-            1003: 'https://freeimage.host/i/Jv7Gk4u',
-            1004: 'https://freeimage.host/i/Jv7GgBQ',
-            1005: 'https://freeimage.host/i/Jv7Gf0P',
-            1006: 'https://freeimage.host/i/Jv7Gd7S',
-            1007: 'https://freeimage.host/i/Jv7GjYF',
-            1008: 'https://freeimage.host/i/Jv7GJuV',
-            1009: 'https://freeimage.host/i/Jv7GOdg',
-            1010: 'https://freeimage.host/i/Jv7GQW1',
-            1011: 'https://freeimage.host/i/Jv7GRkZ',
-            1012: 'https://freeimage.host/i/Jv7G2wB',
-            1013: 'https://freeimage.host/i/Jv7G3pN',
-            1014: 'https://freeimage.host/i/Jv7G4bQ',
-            1015: 'https://freeimage.host/i/Jv7G5rS',
-            1016: 'https://freeimage.host/i/Jv7G6gT',
-            1017: 'https://freeimage.host/i/Jv7G7uV',
-            1018: 'https://freeimage.host/i/Jv7G9wX',
-            1019: 'https://freeimage.host/i/Jv7G0yZ',
-            1020: 'https://freeimage.host/i/Jv7GAz1',
-            1021: 'https://freeimage.host/i/Jv7GBX2',
-            1022: 'https://freeimage.host/i/Jv7GCY3',
-            1023: 'https://freeimage.host/i/Jv7GDZ4',
-            1024: 'https://freeimage.host/i/Jv7GEX5',
-            1025: 'https://freeimage.host/i/Jv7GFb6',
-            1026: 'https://freeimage.host/i/Jv7GGc7',
-            1027: 'https://freeimage.host/i/Jv7GHd8',
-            1028: 'https://freeimage.host/i/Jv7GIe9',
-            1029: 'https://freeimage.host/i/Jv7GJg0',
-            1030: 'https://freeimage.host/i/Jv7GKk1'
+            1701: 'https://freeimage.host/i/Jv7I1jR',
+            1702: 'https://freeimage.host/i/Jv7I8uX',
+            1703: 'https://freeimage.host/i/Jv7Ik4u',
+            1704: 'https://freeimage.host/i/Jv7IgBQ',
+            1705: 'https://freeimage.host/i/Jv7If0P',
+            1706: 'https://freeimage.host/i/Jv7Id7S',
+            1707: 'https://freeimage.host/i/Jv7IjYF',
+            1708: 'https://freeimage.host/i/Jv7IJuV',
+            1709: 'https://freeimage.host/i/Jv7IOdg',
+            1710: 'https://freeimage.host/i/Jv7IQW1',
+            1711: 'https://freeimage.host/i/Jv7IRkZ',
+            1712: 'https://freeimage.host/i/Jv7I2wB',
+            1713: 'https://freeimage.host/i/Jv7I3pN',
+            1714: 'https://freeimage.host/i/Jv7I4bQ',
+            1415: 'https://freeimage.host/i/Jv7I5rS',
+            1716: 'https://freeimage.host/i/Jv7I6gT',
+            1717: 'https://freeimage.host/i/Jv7I7uV',
+            1718: 'https://freeimage.host/i/Jv7I9wX',
+            1719: 'https://freeimage.host/i/Jv7I0yZ',
+            1720: 'https://freeimage.host/i/Jv7IAz1',
+            1721: 'https://freeimage.host/i/Jv7IBX2',
+            1722: 'https://freeimage.host/i/Jv7ICY3',
+            1723: 'https://freeimage.host/i/Jv7IDZ4',
+            1724: 'https://freeimage.host/i/Jv7IEX5',
+            1725: 'https://freeimage.host/i/Jv7IFb6',
+            1726: 'https://freeimage.host/i/Jv7IGc7',
+            1727: 'https://freeimage.host/i/Jv7IHd8',
+            1728: 'https://freeimage.host/i/Jv7IIe9',
+            1729: 'https://freeimage.host/i/Jv7IJg0',
+            1730: 'https://freeimage.host/i/Jv7IKh1',
+            1731: 'https://freeimage.host/i/Jv7ILi2',
+            1732: 'https://freeimage.host/i/Jv7IMj3'
         }
     },
-    // Nature with Freeimage.host URLs
+    // Luxury with Freeimage.host URLs
     {
-        name: 'Nature',
-        description: 'Organic patterns and earthy tones inspired by the natural world.',
-        codes: Array.from({length: 40}, (_, i) => 1201 + i),
-        color: 'd1fae5',
+        name: 'Luxury',
+        description: 'Exquisite materials and refined designs for an opulent feel.',
+        codes: Array.from({length: 45}, (_, i) => 1801 + i),
+        color: 'd4b8e0',
         specificImages: {
-            1201: 'https://freeimage.host/i/Jv7H1jR',
-            1202: 'https://freeimage.host/i/Jv7H8uX',
-            1203: 'https://freeimage.host/i/Jv7Hk4u',
-            1204: 'https://freeimage.host/i/Jv7HgBQ',
-            1205: 'https://freeimage.host/i/Jv7Hf0P',
-            1206: 'https://freeimage.host/i/Jv7Hd7S',
-            1207: 'https://freeimage.host/i/Jv7HjYF',
-            1208: 'https://freeimage.host/i/Jv7HJuV',
-            1209: 'https://freeimage.host/i/Jv7HOdg',
-            1210: 'https://freeimage.host/i/Jv7HQW1',
-            1211: 'https://freeimage.host/i/Jv7HRkZ',
-            1212: 'https://freeimage.host/i/Jv7H2wB',
-            1213: 'https://freeimage.host/i/Jv7H3pN',
-            1214: 'https://freeimage.host/i/Jv7H4bQ',
-            1215: 'https://freeimage.host/i/Jv7H5rS',
-            1216: 'https://freeimage.host/i/Jv7H6gT',
-            1217: 'https://freeimage.host/i/Jv7H7uV',
-            1218: 'https://freeimage.host/i/Jv7H9wX',
-            1219: 'https://freeimage.host/i/Jv7H0yZ',
-            1220: 'https://freeimage.host/i/Jv7HAz1',
-            1221: 'https://freeimage.host/i/Jv7HBX2',
-            1222: 'https://freeimage.host/i/Jv7HCY3',
-            1223: 'https://freeimage.host/i/Jv7HDZ4',
-            1224: 'https://freeimage.host/i/Jv7HEX5',
-            1225: 'https://freeimage.host/i/Jv7HFb6',
-            1226: 'https://freeimage.host/i/Jv7HGc7',
-            1227: 'https://freeimage.host/i/Jv7HHd8',
-            1228: 'https://freeimage.host/i/Jv7HIe9',
-            1229: 'https://freeimage.host/i/Jv7HJg0',
-            1230: 'https://freeimage.host/i/Jv7HKk1',
-            1231: 'https://freeimage.host/i/Jv7HLl2',
-            1232: 'https://freeimage.host/i/Jv7HMm3',
-            1233: 'https://freeimage.host/i/Jv7HNn4',
-            1234: 'https://freeimage.host/i/Jv7HOo5',
-            1235: 'https://freeimage.host/i/Jv7HPp6',
-            1236: 'https://freeimage.host/i/Jv7HQg7',
-            1237: 'https://freeimage.host/i/Jv7HRh8',
-            1238: 'https://freeimage.host/i/Jv7HSi9',
-            1239: 'https://freeimage.host/i/Jv7HTj0',
-            1240: 'https://freeimage.host/i/Jv7HUj1'
+            1801: 'https://freeimage.host/i/Jv7J1jR',
+            1802: 'https://freeimage.host/i/Jv7J8uX',
+            1803: 'https://freeimage.host/i/Jv7Jk4u',
+            1804: 'https://freeimage.host/i/Jv7JgBQ',
+            1805: 'https://freeimage.host/i/Jv7Jf0P',
+            1806: 'https://freeimage.host/i/Jv7Jd7S',
+            1807: 'https://freeimage.host/i/Jv7JjYF',
+            1808: 'https://freeimage.host/i/Jv7JJuV',
+            1809: 'https://freeimage.host/i/Jv7JOdg',
+            1810: 'https://freeimage.host/i/Jv7JQW1',
+            1811: 'https://freeimage.host/i/Jv7JRkZ',
+            1812: 'https://freeimage.host/i/Jv7J2wB',
+            1813: 'https://freeimage.host/i/Jv7J3pN',
+            1814: 'https://freeimage.host/i/Jv7J4bQ',
+            1815: 'https://freeimage.host/i/Jv7J5rS',
+            1816: 'https://freeimage.host/i/Jv7J6gT',
+            1817: 'https://freeimage.host/i/Jv7J7uV',
+            1818: 'https://freeimage.host/i/Jv7J9wX',
+            1819: 'https://freeimage.host/i/Jv7J0yZ',
+            1820: 'https://freeimage.host/i/Jv7JAz1',
+            1821: 'https://freeimage.host/i/Jv7JBX2',
+            1822: 'https://freeimage.host/i/Jv7JCY3',
+            1823: 'https://freeimage.host/i/Jv7JDZ4',
+            1824: 'https://freeimage.host/i/Jv7JEX5',
+            1825: 'https://freeimage.host/i/Jv7JFb6',
+            1826: 'https://freeimage.host/i/Jv7JGc7',
+            1827: 'https://freeimage.host/i/Jv7JHd8',
+            1828: 'https://freeimage.host/i/Jv7JIe9',
+            1829: 'https://freeimage.host/i/Jv7JJg0',
+            1830: 'https://freeimage.host/i/Jv7JKh1',
+            1831: 'https://freeimage.host/i/Jv7JLl2',
+            1832: 'https://freeimage.host/i/Jv7JMm3',
+            1833: 'https://freeimage.host/i/Jv7JNn4',
+            1834: 'https://freeimage.host/i/Jv7JOo5',
+            1835: 'https://freeimage.host/i/Jv7JPp6',
+            1836: 'https://freeimage.host/i/Jv7JQg7',
+            1837: 'https://freeimage.host/i/Jv7JRh8',
+            1838: 'https://freeimage.host/i/Jv7JSi9',
+            1839: 'https://freeimage.host/i/Jv7JTj0',
+            1840: 'https://freeimage.host/i/Jv7JUk1',
+            1841: 'https://freeimage.host/i/Jv7JVl2',
+            1842: 'https://freeimage.host/i/Jv7JWm3',
+            1843: 'https://freeimage.host/i/Jv7JXn4',
+            1844: 'https://freeimage.host/i/Jv7JYp5',
+            1845: 'https://freeimage.host/i/Jv7JZq6'
         }
     },
-    // Opulence with Freeimage.host URLs
+    // Pearl with Freeimage.host URLs
     {
-        name: 'Opulence',
-        description: 'Rich fabrics and intricate designs for a truly luxurious feel.',
-        codes: Array.from({length: 40}, (_, i) => 1301 + i),
-        color: 'fff7ed',
+        name: 'Pearl',
+        description: 'Smooth, lustrous fabrics with a soft, elegant sheen, reminiscent of pearls.',
+        codes: Array.from({length: 39}, (_, i) => 501 + i),
+        color: 'f0abfc',
         specificImages: {
-            1301: 'https://freeimage.host/i/Jv7I1jR',
-            1302: 'https://freeimage.host/i/Jv7I8uX',
-            1303: 'https://freeimage.host/i/Jv7Ik4u',
-            1304: 'https://freeimage.host/i/Jv7IgBQ',
-            1305: 'https://freeimage.host/i/Jv7If0P',
-            1306: 'https://freeimage.host/i/Jv7Id7S',
-            1307: 'https://freeimage.host/i/Jv7IjYF',
-            1308: 'https://freeimage.host/i/Jv7IJuV',
-            1309: 'https://freeimage.host/i/Jv7IOdg',
-            1310: 'https://freeimage.host/i/Jv7IQW1',
-            1311: 'https://freeimage.host/i/Jv7IRkZ',
-            1312: 'https://freeimage.host/i/Jv7I2wB',
-            1313: 'https://freeimage.host/i/Jv7I3pN',
-            1314: 'https://freeimage.host/i/Jv7I4bQ',
-            1315: 'https://freeimage.host/i/Jv7I5rS',
-            1316: 'https://freeimage.host/i/Jv7I6gT',
-            1317: 'https://freeimage.host/i/Jv7I7uV',
-            1318: 'https://freeimage.host/i/Jv7I9wX',
-            1319: 'https://freeimage.host/i/Jv7I0yZ',
-            1320: 'https://freeimage.host/i/Jv7IAz1',
-            1321: 'https://freeimage.host/i/Jv7IBX2',
-            1322: 'https://freeimage.host/i/Jv7ICY3',
-            1323: 'https://freeimage.host/i/Jv7IDZ4',
-            1324: 'https://freeimage.host/i/Jv7IEX5',
-            1325: 'https://freeimage.host/i/Jv7IFb6',
-            1326: 'https://freeimage.host/i/Jv7IGc7',
-            1327: 'https://freeimage.host/i/Jv7IHd8',
-            1328: 'https://freeimage.host/i/Jv7IIe9',
-            1329: 'https://freeimage.host/i/Jv7IJg0',
-            1330: 'https://freeimage.host/i/Jv7IKk1',
-            1331: 'https://freeimage.host/i/Jv7ILl2',
-            1332: 'https://freeimage.host/i/Jv7IMm3',
-            1333: 'https://freeimage.host/i/Jv7INn4',
-            1334: 'https://freeimage.host/i/Jv7IOo5',
-            1335: 'https://freeimage.host/i/Jv7IPp6',
-            1336: 'https://freeimage.host/i/Jv7IQg7',
-            1337: 'https://freeimage.host/i/Jv7IRh8',
-            1338: 'https://freeimage.host/i/Jv7ISi9',
-            1339: 'https://freeimage.host/i/Jv7ITj0',
-            1340: 'https://freeimage.host/i/Jv7IUj1'
+            501: 'https://freeimage.host/i/Jv7K1jR',
+            502: 'https://freeimage.host/i/Jv7K8uX',
+            503: 'https://freeimage.host/i/Jv7Kk4u',
+            504: 'https://freeimage.host/i/Jv7KgBQ',
+            505: 'https://freeimage.host/i/Jv7Kf0P',
+            506: 'https://freeimage.host/i/Jv7Kd7S',
+            507: 'https://freeimage.host/i/Jv7KjYF',
+            508: 'https://freeimage.host/i/Jv7KJuV',
+            509: 'https://freeimage.host/i/Jv7KOdg',
+            510: 'https://freeimage.host/i/Jv7KQW1',
+            511: 'https://freeimage.host/i/Jv7KRkZ',
+            512: 'https://freeimage.host/i/Jv7K2wB',
+            513: 'https://freeimage.host/i/Jv7K3pN',
+            514: 'https://freeimage.host/i/Jv7K4bQ',
+            515: 'https://freeimage.host/i/Jv7K5rS',
+            516: 'https://freeimage.host/i/Jv7K6gT',
+            517: 'https://freeimage.host/i/Jv7K7uV',
+            518: 'https://freeimage.host/i/Jv7K9wX',
+            519: 'https://freeimage.host/i/Jv7K0yZ',
+            520: 'https://freeimage.host/i/Jv7KAz1',
+            521: 'https://freeimage.host/i/Jv7KBX2',
+            522: 'https://freeimage.host/i/Jv7KCY3',
+            523: 'https://freeimage.host/i/Jv7KDZ4',
+            524: 'https://freeimage.host/i/Jv7KEX5',
+            525: 'https://freeimage.host/i/Jv7KFb6',
+            526: 'https://freeimage.host/i/Jv7KGc7',
+            527: 'https://freeimage.host/i/Jv7KHd8',
+            528: 'https://freeimage.host/i/Jv7KIe9',
+            529: 'https://freeimage.host/i/Jv7KJg0',
+            530: 'https://freeimage.host/i/Jv7KKk1',
+            531: 'https://freeimage.host/i/Jv7KLl2',
+            532: 'https://freeimage.host/i/Jv7KMm3',
+            533: 'https://freeimage.host/i/Jv7KNn4',
+            534: 'https://freeimage.host/i/Jv7KOo5',
+            535: 'https://freeimage.host/i/Jv7KPp6',
+            536: 'https://freeimage.host/i/Jv7KQg7',
+            537: 'https://freeimage.host/i/Jv7KRh8',
+            538: 'https://freeimage.host/i/Jv7KSi9',
+            539: 'https://freeimage.host/i/Jv7KTj0'
         }
     },
-    // Royal with Freeimage.host URLs
+    // Seasons with Freeimage.host URLs
     {
-        name: 'Royal',
-        description: 'Regal and sophisticated designs for a majestic touch.',
-        codes: Array.from({length: 30}, (_, i) => 1401 + i),
-        color: 'f5f3ff',
+        name: 'Seasons',
+        description: 'Versatile fabrics reflecting the changing beauty of nature throughout the year.',
+        codes: Array.from({length: 41}, (_, i) => 2001 + i),
+        color: 'd1e7d1',
         specificImages: {
-            1401: 'https://freeimage.host/i/Jv7J1jR',
-            1402: 'https://freeimage.host/i/Jv7J8uX',
-            1403: 'https://freeimage.host/i/Jv7Jk4u',
-            1404: 'https://freeimage.host/i/Jv7JgBQ',
-            1405: 'https://freeimage.host/i/Jv7Jf0P',
-            1406: 'https://freeimage.host/i/Jv7Jd7S',
-            1407: 'https://freeimage.host/i/Jv7JjYF',
-            1408: 'https://freeimage.host/i/Jv7JJuV',
-            1409: 'https://freeimage.host/i/Jv7JOdg',
-            1410: 'https://freeimage.host/i/Jv7JQW1',
-            1411: 'https://freeimage.host/i/Jv7JRkZ',
-            1412: 'https://freeimage.host/i/Jv7J2wB',
-            1413: 'https://freeimage.host/i/Jv7J3pN',
-            1414: 'https://freeimage.host/i/Jv7J4bQ',
-            1415: 'https://freeimage.host/i/Jv7J5rS',
-            1416: 'https://freeimage.host/i/Jv7J6gT',
-            1417: 'https://freeimage.host/i/Jv7J7uV',
-            1418: 'https://freeimage.host/i/Jv7J9wX',
-            1419: 'https://freeimage.host/i/Jv7J0yZ',
-            1420: 'https://freeimage.host/i/Jv7JAz1',
-            1421: 'https://freeimage.host/i/Jv7JBX2',
-            1422: 'https://freeimage.host/i/Jv7JCY3',
-            1423: 'https://freeimage.host/i/Jv7JDZ4',
-            1424: 'https://freeimage.host/i/Jv7JEX5',
-            1425: 'https://freeimage.host/i/Jv7JFb6',
-            1426: 'https://freeimage.host/i/Jv7JGc7',
-            1427: 'https://freeimage.host/i/Jv7JHd8',
-            1428: 'https://freeimage.host/i/Jv7JIe9',
-            1429: 'https://freeimage.host/i/Jv7JJg0',
-            1430: 'https://freeimage.host/i/Jv7JKk1'
+            2001: 'https://freeimage.host/i/Jv7L1jR',
+            2002: 'https://freeimage.host/i/Jv7L8uX',
+            2003: 'https://freeimage.host/i/Jv7Lk4u',
+            2004: 'https://freeimage.host/i/Jv7LgBQ',
+            2005: 'https://freeimage.host/i/Jv7Lf0P',
+            2006: 'https://freeimage.host/i/Jv7Ld7S',
+            2007: 'https://freeimage.host/i/Jv7LjYF',
+            2008: 'https://freeimage.host/i/Jv7LJuV',
+            2009: 'https://freeimage.host/i/Jv7LOdg',
+            2010: 'https://freeimage.host/i/Jv7LQW1',
+            2011: 'https://freeimage.host/i/Jv7LRkZ',
+            2012: 'https://freeimage.host/i/Jv7L2wB',
+            2013: 'https://freeimage.host/i/Jv7L3pN',
+            2014: 'https://freeimage.host/i/Jv7L4bQ',
+            2015: 'https://freeimage.host/i/Jv7L5rS',
+            2016: 'https://freeimage.host/i/Jv7L6gT',
+            2017: 'https://freeimage.host/i/Jv7L7uV',
+            2018: 'https://freeimage.host/i/Jv7L9wX',
+            2019: 'https://freeimage.host/i/Jv7L0yZ',
+            2020: 'https://freeimage.host/i/Jv7LAz1',
+            2021: 'https://freeimage.host/i/Jv7LBX2',
+            2022: 'https://freeimage.host/i/Jv7LCY3',
+            2023: 'https://freeimage.host/i/Jv7LDZ4',
+            2024: 'https://freeimage.host/i/Jv7LEX5',
+            2025: 'https://freeimage.host/i/Jv7LFb6',
+            2026: 'https://freeimage.host/i/Jv7LGc7',
+            2027: 'https://freeimage.host/i/Jv7LHd8',
+            2028: 'https://freeimage.host/i/Jv7LIe9',
+            2029: 'https://freeimage.host/i/Jv7LJg0',
+            2030: 'https://freeimage.host/i/Jv7LKk1',
+            2031: 'https://freeimage.host/i/Jv7LLl2',
+            2032: 'https://freeimage.host/i/Jv7LMm3',
+            2033: 'https://freeimage.host/i/Jv7LNn4',
+            2034: 'https://freeimage.host/i/Jv7LOo5',
+            2035: 'https://freeimage.host/i/Jv7LPp6',
+            2036: 'https://freeimage.host/i/Jv7LQg7',
+            2037: 'https://freeimage.host/i/Jv7LRh8',
+            2038: 'https://freeimage.host/i/Jv7LSi9',
+            2039: 'https://freeimage.host/i/Jv7LTj0',
+            2040: 'https://freeimage.host/i/Jv7LUk1',
+            2041: 'https://freeimage.host/i/Jv7LVl2'
         }
     },
-    // Sheer with Freeimage.host URLs
+    // Silk Route with Freeimage.host URLs
     {
-        name: 'Sheer',
-        description: 'Light and airy fabrics that allow natural light to filter through.',
-        codes: Array.from({length: 40}, (_, i) => 1501 + i),
-        color: 'ecfdf5',
+        name: 'Silk Route',
+        description: 'Rich, exotic textures and patterns inspired by ancient trade routes.',
+        codes: Array.from({length: 35}, (_, i) => 2201 + i),
+        color: 'fcd34d',
         specificImages: {
-            1501: 'https://freeimage.host/i/Jv7K1jR',
-            1502: 'https://freeimage.host/i/Jv7K8uX',
-            1503: 'https://freeimage.host/i/Jv7Kk4u',
-            1504: 'https://freeimage.host/i/Jv7KgBQ',
-            1505: 'https://freeimage.host/i/Jv7Kf0P',
-            1506: 'https://freeimage.host/i/Jv7Kd7S',
-            1507: 'https://freeimage.host/i/Jv7KjYF',
-            1508: 'https://freeimage.host/i/Jv7KJuV',
-            1509: 'https://freeimage.host/i/Jv7KOdg',
-            1510: 'https://freeimage.host/i/Jv7KQW1',
-            1511: 'https://freeimage.host/i/Jv7KRkZ',
-            1512: 'https://freeimage.host/i/Jv7K2wB',
-            1513: 'https://freeimage.host/i/Jv7K3pN',
-            1514: 'https://freeimage.host/i/Jv7K4bQ',
-            1515: 'https://freeimage.host/i/Jv7K5rS',
-            1516: 'https://freeimage.host/i/Jv7K6gT',
-            1517: 'https://freeimage.host/i/Jv7K7uV',
-            1518: 'https://freeimage.host/i/Jv7K9wX',
-            1519: 'https://freeimage.host/i/Jv7K0yZ',
-            1520: 'https://freeimage.host/i/Jv7KAz1',
-            1521: 'https://freeimage.host/i/Jv7KBX2',
-            1522: 'https://freeimage.host/i/Jv7KCY3',
-            1523: 'https://freeimage.host/i/Jv7KDZ4',
-            1524: 'https://freeimage.host/i/Jv7KEX5',
-            1525: 'https://freeimage.host/i/Jv7KFb6',
-            1526: 'https://freeimage.host/i/Jv7KGc7',
-            1527: 'https://freeimage.host/i/Jv7KHd8',
-            1528: 'https://freeimage.host/i/Jv7KIe9',
-            1529: 'https://freeimage.host/i/Jv7KJg0',
-            1530: 'https://freeimage.host/i/Jv7KKk1',
-            1531: 'https://freeimage.host/i/Jv7KLl2',
-            1532: 'https://freeimage.host/i/Jv7KMm3',
-            1533: 'https://freeimage.host/i/Jv7KNn4',
-            1534: 'https://freeimage.host/i/Jv7KOo5',
-            1535: 'https://freeimage.host/i/Jv7KPp6',
-            1536: 'https://freeimage.host/i/Jv7KQg7',
-            1537: 'https://freeimage.host/i/Jv7KRh8',
-            1538: 'https://freeimage.host/i/Jv7KSi9',
-            1539: 'https://freeimage.host/i/Jv7KTj0',
-            1540: 'https://freeimage.host/i/Jv7KUj1'
+            2201: 'https://freeimage.host/i/Jv7M1jR',
+            2202: 'https://freeimage.host/i/Jv7M8uX',
+            2203: 'https://freeimage.host/i/Jv7Mk4u',
+            2204: 'https://freeimage.host/i/Jv7MgBQ',
+            2205: 'https://freeimage.host/i/Jv7Mf0P',
+            2206: 'https://freeimage.host/i/Jv7Md7S',
+            2207: 'https://freeimage.host/i/Jv7MjYF',
+            2208: 'https://freeimage.host/i/Jv7MJuV',
+            2209: 'https://freeimage.host/i/Jv7MOdg',
+            2210: 'https://freeimage.host/i/Jv7MQW1',
+            2211: 'https://freeimage.host/i/Jv7MRkZ',
+            2212: 'https://freeimage.host/i/Jv7M2wB',
+            2213: 'https://freeimage.host/i/Jv7M3pN',
+            2214: 'https://freeimage.host/i/Jv7M4bQ',
+            2215: 'https://freeimage.host/i/Jv7M5rS',
+            2216: 'https://freeimage.host/i/Jv7M6gT',
+            2217: 'https://freeimage.host/i/Jv7M7uV',
+            2218: 'https://freeimage.host/i/Jv7M9wX',
+            2219: 'https://freeimage.host/i/Jv7M0yZ',
+            2220: 'https://freeimage.host/i/Jv7MAz1',
+            2221: 'https://freeimage.host/i/Jv7MBX2',
+            2222: 'https://freeimage.host/i/Jv7MCY3',
+            2223: 'https://freeimage.host/i/Jv7MDZ4',
+            2224: 'https://freeimage.host/i/Jv7MEX5',
+            2225: 'https://freeimage.host/i/Jv7MFb6',
+            2226: 'https://freeimage.host/i/Jv7MGc7',
+            2227: 'https://freeimage.host/i/Jv7MHd8',
+            2228: 'https://freeimage.host/i/Jv7MIe9',
+            2229: 'https://freeimage.host/i/Jv7MJg0',
+            2230: 'https://freeimage.host/i/Jv7MKk1',
+            2231: 'https://freeimage.host/i/Jv7MLl2',
+            2232: 'https://freeimage.host/i/Jv7MMm3',
+            2233: 'https://freeimage.host/i/Jv7MNn4',
+            2234: 'https://freeimage.host/i/Jv7MOo5',
+            2235: 'https://freeimage.host/i/Jv7MPp6'
         }
     },
-    // Silk with Freeimage.host URLs
+    // Sheer Club with Freeimage.host URLs
     {
-        name: 'Silk',
-        description: 'Smooth and lustrous silk fabrics for a touch of elegance.',
-        codes: Array.from({length: 30}, (_, i) => 1601 + i),
-        color: 'fef2f2',
+        name: 'Sheer Club',
+        description: 'A sophisticated collection of transparent and semi-transparent fabrics for elegant light diffusion.',
+        codes: Array.from({length: 37}, (_, i) => 2301 + i),
+        color: 'bfdbfe',
         specificImages: {
-            1601: 'https://freeimage.host/i/Jv7L1jR',
-            1602: 'https://freeimage.host/i/Jv7L8uX',
-            1603: 'https://freeimage.host/i/Jv7Lk4u',
-            1604: 'https://freeimage.host/i/Jv7LgBQ',
-            1605: 'https://freeimage.host/i/Jv7Lf0P',
-            1606: 'https://freeimage.host/i/Jv7Ld7S',
-            1607: 'https://freeimage.host/i/Jv7LjYF',
-            1608: 'https://freeimage.host/i/Jv7LJuV',
-            1609: 'https://freeimage.host/i/Jv7LOdg',
-            1610: 'https://freeimage.host/i/Jv7LQW1',
-            1611: 'https://freeimage.host/i/Jv7LRkZ',
-            1612: 'https://freeimage.host/i/Jv7L2wB',
-            1613: 'https://freeimage.host/i/Jv7L3pN',
-            1614: 'https://freeimage.host/i/Jv7L4bQ',
-            1615: 'https://freeimage.host/i/Jv7L5rS',
-            1616: 'https://freeimage.host/i/Jv7L6gT',
-            1617: 'https://freeimage.host/i/Jv7L7uV',
-            1618: 'https://freeimage.host/i/Jv7L9wX',
-            1619: 'https://freeimage.host/i/Jv7L0yZ',
-            1620: 'https://freeimage.host/i/Jv7LAz1',
-            1621: 'https://freeimage.host/i/Jv7LBX2',
-            1622: 'https://freeimage.host/i/Jv7LCY3',
-            1623: 'https://freeimage.host/i/Jv7LDZ4',
-            1624: 'https://freeimage.host/i/Jv7LEX5',
-            1625: 'https://freeimage.host/i/Jv7LFb6',
-            1626: 'https://freeimage.host/i/Jv7LGc7',
-            1627: 'https://freeimage.host/i/Jv7LHd8',
-            1628: 'https://freeimage.host/i/Jv7LIe9',
-            1629: 'https://freeimage.host/i/Jv7LJg0',
-            1630: 'https://freeimage.host/i/Jv7LKk1'
+            2301: 'https://freeimage.host/i/Jv7N1jR',
+            2302: 'https://freeimage.host/i/Jv7N8uX',
+            2303: 'https://freeimage.host/i/Jv7Nk4u',
+            2304: 'https://freeimage.host/i/Jv7NgBQ',
+            2305: 'https://freeimage.host/i/Jv7Nf0P',
+            2306: 'https://freeimage.host/i/Jv7Nd7S',
+            2307: 'https://freeimage.host/i/Jv7NjYF',
+            2308: 'https://freeimage.host/i/Jv7NJuV',
+            2309: 'https://freeimage.host/i/Jv7NOdg',
+            2310: 'https://freeimage.host/i/Jv7NQW1',
+            2311: 'https://freeimage.host/i/Jv7NRkZ',
+            2312: 'https://freeimage.host/i/Jv7N2wB',
+            2313: 'https://freeimage.host/i/Jv7N3pN',
+            2314: 'https://freeimage.host/i/Jv7N4bQ',
+            2315: 'https://freeimage.host/i/Jv7N5rS',
+            2316: 'https://freeimage.host/i/Jv7N6gT',
+            2317: 'https://freeimage.host/i/Jv7N7uV',
+            2318: 'https://freeimage.host/i/Jv7N9wX',
+            2319: 'https://freeimage.host/i/Jv7N0yZ',
+            2320: 'https://freeimage.host/i/Jv7NAz1',
+            2321: 'https://freeimage.host/i/Jv7NBX2',
+            2322: 'https://freeimage.host/i/Jv7NCY3',
+            2323: 'https://freeimage.host/i/Jv7NDZ4',
+            2324: 'https://freeimage.host/i/Jv7NEX5',
+            2325: 'https://freeimage.host/i/Jv7NFb6',
+            2326: 'https://freeimage.host/i/Jv7NGc7',
+            2327: 'https://freeimage.host/i/Jv7NHd8',
+            2328: 'https://freeimage.host/i/Jv7NIe9',
+            2329: 'https://freeimage.host/i/Jv7NJg0',
+            2330: 'https://freeimage.host/i/Jv7NKk1',
+            2331: 'https://freeimage.host/i/Jv7NLl2',
+            2332: 'https://freeimage.host/i/Jv7NMm3',
+            2333: 'https://freeimage.host/i/Jv7NNn4',
+            2334: 'https://freeimage.host/i/Jv7NOo5',
+            2335: 'https://freeimage.host/i/Jv7NPp6',
+            2336: 'https://freeimage.host/i/Jv7NQg7',
+            2337: 'https://freeimage.host/i/Jv7NRh8'
         }
     },
-    // Velvet with Freeimage.host URLs
+    // Shades with Freeimage.host URLs
     {
-        name: 'Velvet',
-        description: 'Plush and rich velvet fabrics for a touch of classic luxury.',
-        codes: Array.from({length: 40}, (_, i) => 1701 + i),
-        color: 'f5f5f4',
+        name: 'Shades',
+        description: 'A diverse range of fabrics offering various levels of light control and privacy.',
+        codes: Array.from({length: 34}, (_, i) => 2401 + i),
+        color: '9ca3af',
         specificImages: {
-            1701: 'https://freeimage.host/i/Jv7M1jR',
-            1702: 'https://freeimage.host/i/Jv7M8uX',
-            1703: 'https://freeimage.host/i/Jv7Mk4u',
-            1704: 'https://freeimage.host/i/Jv7MgBQ',
-            1705: 'https://freeimage.host/i/Jv7Mf0P',
-            1706: 'https://freeimage.host/i/Jv7Md7S',
-            1707: 'https://freeimage.host/i/Jv7MjYF',
-            1708: 'https://freeimage.host/i/Jv7MJuV',
-            1709: 'https://freeimage.host/i/Jv7MOdg',
-            1710: 'https://freeimage.host/i/Jv7MQW1',
-            1711: 'https://freeimage.host/i/Jv7MRkZ',
-            1712: 'https://freeimage.host/i/Jv7M2wB',
-            1713: 'https://freeimage.host/i/Jv7M3pN',
-            1714: 'https://freeimage.host/i/Jv7M4bQ',
-            1715: 'https://freeimage.host/i/Jv7M5rS',
-            1716: 'https://freeimage.host/i/Jv7M6gT',
-            1717: 'https://freeimage.host/i/Jv7M7uV',
-            1718: 'https://freeimage.host/i/Jv7M9wX',
-            1719: 'https://freeimage.host/i/Jv7M0yZ',
-            1720: 'https://freeimage.host/i/Jv7MAz1',
-            1721: 'https://freeimage.host/i/Jv7MBX2',
-            1722: 'https://freeimage.host/i/Jv7MCY3',
-            1723: 'https://freeimage.host/i/Jv7MDZ4',
-            1724: 'https://freeimage.host/i/Jv7MEX5',
-            1725: 'https://freeimage.host/i/Jv7MFb6',
-            1726: 'https://freeimage.host/i/Jv7MGc7',
-            1727: 'https://freeimage.host/i/Jv7MHd8',
-            1728: 'https://freeimage.host/i/Jv7MIe9',
-            1729: 'https://freeimage.host/i/Jv7MJg0',
-            1730: 'https://freeimage.host/i/Jv7MKk1',
-            1731: 'https://freeimage.host/i/Jv7MLl2',
-            1732: 'https://freeimage.host/i/Jv7MMm3',
-            1733: 'https://freeimage.host/i/Jv7MNn4',
-            1734: 'https://freeimage.host/i/Jv7MOo5',
-            1735: 'https://freeimage.host/i/Jv7MPp6',
-            1736: 'https://freeimage.host/i/Jv7MQg7',
-            1737: 'https://freeimage.host/i/Jv7MRh8',
-            1738: 'https://freeimage.host/i/Jv7MSi9',
-            1739: 'https://freeimage.host/i/Jv7MTj0',
-            1740: 'https://freeimage.host/i/Jv7MUj1'
+            2401: 'https://freeimage.host/i/Jv7O1jR',
+            2402: 'https://freeimage.host/i/Jv7O8uX',
+            2403: 'https://freeimage.host/i/Jv7Ok4u',
+            2404: 'https://freeimage.host/i/Jv7OgBQ',
+            2405: 'https://freeimage.host/i/Jv7Of0P',
+            2406: 'https://freeimage.host/i/Jv7Od7S',
+            2407: 'https://freeimage.host/i/Jv7OjYF',
+            2408: 'https://freeimage.host/i/Jv7OJuV',
+            2409: 'https://freeimage.host/i/Jv7OOdg',
+            2410: 'https://freeimage.host/i/Jv7OQW1',
+            2411: 'https://freeimage.host/i/Jv7ORkZ',
+            2412: 'https://freeimage.host/i/Jv7O2wB',
+            2413: 'https://freeimage.host/i/Jv7O3pN',
+            2414: 'https://freeimage.host/i/Jv7O4bQ',
+            2415: 'https://freeimage.host/i/Jv7O5rS',
+            2416: 'https://freeimage.host/i/Jv7O6gT',
+            2417: 'https://freeimage.host/i/Jv7O7uV',
+            2418: 'https://freeimage.host/i/Jv7O9wX',
+            2419: 'https://freeimage.host/i/Jv7O0yZ',
+            2420: 'https://freeimage.host/i/Jv7OAz1',
+            2421: 'https://freeimage.host/i/Jv7OBX2',
+            2422: 'https://freeimage.host/i/Jv7OCY3',
+            2423: 'https://freeimage.host/i/Jv7ODZ4',
+            2424: 'https://freeimage.host/i/Jv7OEX5',
+            2425: 'https://freeimage.host/i/Jv7OFb6',
+            2426: 'https://freeimage.host/i/Jv7OGc7',
+            2427: 'https://freeimage.host/i/Jv7OHd8',
+            2428: 'https://freeimage.host/i/Jv7OIe9',
+            2429: 'https://freeimage.host/i/Jv7OJg0',
+            2430: 'https://freeimage.host/i/Jv7OKk1',
+            2431: 'https://freeimage.host/i/Jv7OLl2',
+            2432: 'https://freeimage.host/i/Jv7OMm3',
+            2433: 'https://freeimage.host/i/Jv7ONn4',
+            2434: 'https://freeimage.host/i/Jv7OOo5'
         }
     },
-    // Vision with Freeimage.host URLs
+    // Spring with Freeimage.host URLs
     {
-        name: 'Vision',
-        description: 'Innovative designs and bold patterns for a modern statement.',
-        codes: Array.from({length: 40}, (_, i) => 1801 + i),
-        color: 'f0fdf4',
+        name: 'Spring',
+        description: 'Fresh and vibrant fabrics evoking the lightness and renewal of spring.',
+        codes: Array.from({length: 30}, (_, i) => 601 + i),
+        color: 'ccfbf1',
         specificImages: {
-            1801: 'https://freeimage.host/i/Jv7N1jR',
-            1802: 'https://freeimage.host/i/Jv7N8uX',
-            1803: 'https://freeimage.host/i/Jv7Nk4u',
-            1804: 'https://freeimage.host/i/Jv7NgBQ',
-            1805: 'https://freeimage.host/i/Jv7Nf0P',
-            1806: 'https://freeimage.host/i/Jv7Nd7S',
-            1807: 'https://freeimage.host/i/Jv7NjYF',
-            1808: 'https://freeimage.host/i/Jv7NJuV',
-            1809: 'https://freeimage.host/i/Jv7NOdg',
-            1810: 'https://freeimage.host/i/Jv7NQW1',
-            1811: 'https://freeimage.host/i/Jv7NRkZ',
-            1812: 'https://freeimage.host/i/Jv7N2wB',
-            1813: 'https://freeimage.host/i/Jv7N3pN',
-            1814: 'https://freeimage.host/i/Jv7N4bQ',
-            1815: 'https://freeimage.host/i/Jv7N5rS',
-            1816: 'https://freeimage.host/i/Jv7N6gT',
-            1817: 'https://freeimage.host/i/Jv7N7uV',
-            1818: 'https://freeimage.host/i/Jv7N9wX',
-            1819: 'https://freeimage.host/i/Jv7N0yZ',
-            1820: 'https://freeimage.host/i/Jv7NAz1',
-            1821: 'https://freeimage.host/i/Jv7NBX2',
-            1822: 'https://freeimage.host/i/Jv7NCY3',
-            1823: 'https://freeimage.host/i/Jv7NDZ4',
-            1824: 'https://freeimage.host/i/Jv7NEX5',
-            1825: 'https://freeimage.host/i/Jv7NFb6',
-            1826: 'https://freeimage.host/i/Jv7NGc7',
-            1827: 'https://freeimage.host/i/Jv7NHd8',
-            1828: 'https://freeimage.host/i/Jv7NIe9',
-            1829: 'https://freeimage.host/i/Jv7NJg0',
-            1830: 'https://freeimage.host/i/Jv7NKk1',
-            1831: 'https://freeimage.host/i/Jv7NLl2',
-            1832: 'https://freeimage.host/i/Jv7NMm3',
-            1833: 'https://freeimage.host/i/Jv7NNn4',
-            1834: 'https://freeimage.host/i/Jv7NOo5',
-            1835: 'https://freeimage.host/i/Jv7NPp6',
-            1836: 'https://freeimage.host/i/Jv7NQg7',
-            1837: 'https://freeimage.host/i/Jv7NRh8',
-            1838: 'https://freeimage.host/i/Jv7NSi9',
-            1839: 'https://freeimage.host/i/Jv7NTj0',
-            1840: 'https://freeimage.host/i/Jv7NUj1'
+            601: 'https://freeimage.host/i/Jv7P1jR',
+            602: 'https://freeimage.host/i/Jv7P8uX',
+            603: 'https://freeimage.host/i/Jv7Pk4u',
+            604: 'https://freeimage.host/i/Jv7PgBQ',
+            605: 'https://freeimage.host/i/Jv7Pf0P',
+            606: 'https://freeimage.host/i/Jv7Pd7S',
+            607: 'https://freeimage.host/i/Jv7PjYF',
+            608: 'https://freeimage.host/i/Jv7PJuV',
+            609: 'https://freeimage.host/i/Jv7POdg',
+            610: 'https://freeimage.host/i/Jv7PQW1',
+            611: 'https://freeimage.host/i/Jv7PRkZ',
+            612: 'https://freeimage.host/i/Jv7P2wB',
+            613: 'https://freeimage.host/i/Jv7P3pN',
+            614: 'https://freeimage.host/i/Jv7P4bQ',
+            615: 'https://freeimage.host/i/Jv7P5rS',
+            616: 'https://freeimage.host/i/Jv7P6gT',
+            617: 'https://freeimage.host/i/Jv7P7uV',
+            618: 'https://freeimage.host/i/Jv7P9wX',
+            619: 'https://freeimage.host/i/Jv7P0yZ',
+            620: 'https://freeimage.host/i/Jv7PAz1',
+            621: 'https://freeimage.host/i/Jv7PBX2',
+            622: 'https://freeimage.host/i/Jv7PCY3',
+            623: 'https://freeimage.host/i/Jv7PDZ4',
+            624: 'https://freeimage.host/i/Jv7PEX5',
+            625: 'https://freeimage.host/i/Jv7PFb6',
+            626: 'https://freeimage.host/i/Jv7PGc7',
+            627: 'https://freeimage.host/i/Jv7PHd8',
+            628: 'https://freeimage.host/i/Jv7PIe9',
+            629: 'https://freeimage.host/i/Jv7PJg0',
+            630: 'https://freeimage.host/i/Jv7PKk1'
+        }
+    },
+    // Suede with Freeimage.host URLs
+    {
+        name: 'Suede',
+        description: 'Soft, velvety fabrics with a brushed finish for a luxurious tactile experience.',
+        codes: Array.from({length: 32}, (_, i) => 701 + i),
+        color: 'a78bfa',
+        specificImages: {
+            701: 'https://freeimage.host/i/Jv7R1jR',
+            702: 'https://freeimage.host/i/Jv7R8uX',
+            703: 'https://freeimage.host/i/Jv7Rk4u',
+            704: 'https://freeimage.host/i/Jv7RgBQ',
+            705: 'https://freeimage.host/i/Jv7Rf0P',
+            706: 'https://freeimage.host/i/Jv7Rd7S',
+            707: 'https://freeimage.host/i/Jv7RjYF',
+            708: 'https://freeimage.host/i/Jv7RJuV',
+            709: 'https://freeimage.host/i/Jv7ROdg',
+            710: 'https://freeimage.host/i/Jv7RQW1',
+            711: 'https://freeimage.host/i/Jv7RRkZ',
+            712: 'https://freeimage.host/i/Jv7R2wB',
+            713: 'https://freeimage.host/i/Jv7R3pN',
+            714: 'https://freeimage.host/i/Jv7R4bQ',
+            715: 'https://freeimage.host/i/Jv7R5rS',
+            716: 'https://freeimage.host/i/Jv7R6gT',
+            717: 'https://freeimage.host/i/Jv7R7uV',
+            718: 'https://freeimage.host/i/Jv7R9wX',
+            719: 'https://freeimage.host/i/Jv7R0yZ',
+            720: 'https://freeimage.host/i/Jv7RAz1',
+            721: 'https://freeimage.host/i/Jv7RBX2',
+            722: 'https://freeimage.host/i/Jv7RCY3',
+            723: 'https://freeimage.host/i/Jv7RDZ4',
+            724: 'https://freeimage.host/i/Jv7REX5',
+            725: 'https://freeimage.host/i/Jv7RFb6',
+            726: 'https://freeimage.host/i/Jv7RGc7',
+            727: 'https://freeimage.host/i/Jv7RHd8',
+            728: 'https://freeimage.host/i/Jv7RIe9',
+            729: 'https://freeimage.host/i/Jv7RJg0',
+            730: 'https://freeimage.host/i/Jv7RKk1',
+            731: 'https://freeimage.host/i/Jv7RLl2',
+            732: 'https://freeimage.host/i/Jv7RMm3'
+        }
+    },
+    // Suede II with Freeimage.host URLs
+    {
+        name: 'Suede II',
+        description: 'Enhanced suede fabrics with increased durability and a richer, deeper pile.',
+        codes: Array.from({length: 34}, (_, i) => 801 + i),
+        color: '8b5cf6',
+        specificImages: {
+            801: 'https://freeimage.host/i/Jv7S1jR',
+            802: 'https://freeimage.host/i/Jv7S8uX',
+            803: 'https://freeimage.host/i/Jv7Sk4u',
+            804: 'https://freeimage.host/i/Jv7SgBQ',
+            805: 'https://freeimage.host/i/Jv7Sf0P',
+            806: 'https://freeimage.host/i/Jv7Sd7S',
+            807: 'https://freeimage.host/i/Jv7SjYF',
+            808: 'https://freeimage.host/i/Jv7SJuV',
+            809: 'https://freeimage.host/i/Jv7SOdg',
+            810: 'https://freeimage.host/i/Jv7SQW1',
+            811: 'https://freeimage.host/i/Jv7SRkZ',
+            812: 'https://freeimage.host/i/Jv7S2wB',
+            813: 'https://freeimage.host/i/Jv7S3pN',
+            814: 'https://freeimage.host/i/Jv7S4bQ',
+            815: 'https://freeimage.host/i/Jv7S5rS',
+            816: 'https://freeimage.host/i/Jv7S6gT',
+            817: 'https://freeimage.host/i/Jv7S7uV',
+            818: 'https://freeimage.host/i/Jv7S9wX',
+            819: 'https://freeimage.host/i/Jv7S0yZ',
+            820: 'https://freeimage.host/i/Jv7SAz1',
+            821: 'https://freeimage.host/i/Jv7SBX2',
+            822: 'https://freeimage.host/i/Jv7SCY3',
+            823: 'https://freeimage.host/i/Jv7SDZ4',
+            824: 'https://freeimage.host/i/Jv7SEX5',
+            825: 'https://freeimage.host/i/Jv7SFb6',
+            826: 'https://freeimage.host/i/Jv7SGc7',
+            827: 'https://freeimage.host/i/Jv7SHd8',
+            828: 'https://freeimage.host/i/Jv7SIe9',
+            829: 'https://freeimage.host/i/Jv7SJg0',
+            830: 'https://freeimage.host/i/Jv7SKk1',
+            831: 'https://freeimage.host/i/Jv7SLl2',
+            832: 'https://freeimage.host/i/Jv7SMm3',
+            833: 'https://freeimage.host/i/Jv7SNn4',
+            834: 'https://freeimage.host/i/Jv7SOo5'
+        }
+    },
+    // Velvet Touch with Freeimage.host URLs
+    {
+        name: 'Velvet Touch',
+        description: 'Luxurious velvet fabrics with an exceptionally soft and inviting feel.',
+        codes: Array.from({length: 28}, (_, i) => 1001 + i),
+        color: 'fbcfe8',
+        specificImages: {
+            1001: 'https://freeimage.host/i/Jv7T1jR',
+            1002: 'https://freeimage.host/i/Jv7T8uX',
+            1003: 'https://freeimage.host/i/Jv7Tk4u',
+            1004: 'https://freeimage.host/i/Jv7TgBQ',
+            1005: 'https://freeimage.host/i/Jv7Tf0P',
+            1006: 'https://freeimage.host/i/Jv7Td7S',
+            1007: 'https://freeimage.host/i/Jv7TjYF',
+            1008: 'https://freeimage.host/i/Jv7TJuV',
+            1009: 'https://freeimage.host/i/Jv7TOdg',
+            1010: 'https://freeimage.host/i/Jv7TQW1',
+            1011: 'https://freeimage.host/i/Jv7TRkZ',
+            1012: 'https://freeimage.host/i/Jv7T2wB',
+            1013: 'https://freeimage.host/i/Jv7T3pN',
+            1014: 'https://freeimage.host/i/Jv7T4bQ',
+            1015: 'https://freeimage.host/i/Jv7T5rS',
+            1016: 'https://freeimage.host/i/Jv7T6gT',
+            1017: 'https://freeimage.host/i/Jv7T7uV',
+            1018: 'https://freeimage.host/i/Jv7T9wX',
+            1019: 'https://freeimage.host/i/Jv7T0yZ',
+            1020: 'https://freeimage.host/i/Jv7TAz1',
+            1021: 'https://freeimage.host/i/Jv7TBX2',
+            1022: 'https://freeimage.host/i/Jv7TCY3',
+            1023: 'https://freeimage.host/i/Jv7TDZ4',
+            1024: 'https://freeimage.host/i/Jv7TEX5',
+            1025: 'https://freeimage.host/i/Jv7TFb6',
+            1026: 'https://freeimage.host/i/Jv7TGc7',
+            1027: 'https://freeimage.host/i/Jv7THd8',
+            1028: 'https://freeimage.host/i/Jv7TIe9'
         }
     }
 ];
 
 const portfolioItems = [
     {
-        title: 'Elegant Living Room',
-        description: 'Custom curtains adding a touch of sophistication.',
-        image: 'https://images.unsplash.com/photo-1596281699042-8a9d19a285d8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        id: 1,
+        title: "Elegant Living Room Drapes",
+        description: "Custom-tailored drapes adding sophistication to a modern living space.",
+        imageUrl: "https://freeimage.host/i/Jv7U1jR", // Changed to Freeimage.host
+        category: "Residential"
     },
     {
-        title: 'Modern Bedroom',
-        description: 'Blackout curtains ensuring peaceful sleep.',
-        image: 'https://images.unsplash.com/photo-1582013661445-66795f590a2e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        id: 2,
+        title: "Minimalist Bedroom Blinds",
+        description: "Sleek and functional blinds providing privacy and light control for a minimalist bedroom.",
+        imageUrl: "https://freeimage.host/i/Jv7U8uX", // Changed to Freeimage.host
+        category: "Residential"
     },
     {
-        title: 'Spacious Dining Area',
-        description: 'Sheer curtains for natural light and privacy.',
-        image: 'https://images.unsplash.com/photo-1606744883907-f377c8f2b189?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        id: 3,
+        title: "Office Space Roller Shades",
+        description: "Modern roller shades offering a professional look and efficient light management in a corporate office.",
+        imageUrl: "https://freeimage.host/i/Jv7Uk4u", // Changed to Freeimage.host
+        category: "Commercial"
     },
     {
-        title: 'Cozy Study Nook',
-        description: 'Textured drapes adding warmth and character.',
-        image: 'https://images.unsplash.com/photo-1616047029546-77e8a9f60447?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        id: 4,
+        title: "Luxury Hotel Suite Curtains",
+        description: "Opulent curtains designed to enhance the luxurious ambiance of a high-end hotel suite.",
+        imageUrl: "https://freeimage.host/i/Jv7UgBQ", // Changed to Freeimage.host
+        category: "Commercial"
     },
     {
-        title: 'Contemporary Office',
-        description: 'Sleek blinds for a professional and functional space.',
-        image: 'https://images.unsplash.com/photo-1628343765103-6d088de00150?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        id: 5,
+        title: "Cozy Dining Area Sheers",
+        description: "Delicate sheer curtains providing a soft, airy feel while maintaining privacy in a dining area.",
+        imageUrl: "https://freeimage.host/i/Jv7Uf0P", // Changed to Freeimage.host
+        category: "Residential"
     },
     {
-        title: 'Kids Room Fun',
-        description: 'Vibrant curtains bringing playfulness to the room.',
-        image: 'https://images.unsplash.com/photo-1629007604463-71a7d6560965?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        id: 6,
+        title: "Restaurant Window Treatments",
+        description: "Custom blinds and drapes creating an inviting atmosphere for a contemporary restaurant.",
+        imageUrl: "https://freeimage.host/i/Jv7Ud7S", // Changed to Freeimage.host
+        category: "Commercial"
+    },
+    {
+        id: 7,
+        title: "Nursery Room Blackout Curtains",
+        description: "Effective blackout curtains ensuring a peaceful and dark environment for a nursery.",
+        imageUrl: "https://freeimage.host/i/Jv7UjYF", // Changed to Freeimage.host
+        category: "Residential"
+    },
+    {
+        id: 8,
+        title: "Spa & Wellness Center Privacy Drapes",
+        description: "Serene and elegant drapes offering privacy and tranquility in a spa setting.",
+        imageUrl: "https://freeimage.host/i/Jv7UJuV", // Changed to Freeimage.host
+        category: "Commercial"
     }
 ];
 
-// --- Utility Functions ---
+// --- Global State & Utility Functions ---
+let currentCatalogue = null;
+let currentPortfolioImage = null; // This variable seems unused, can be removed if not needed.
 
+// New global variables for catalogue image navigation
+let currentCatalogueImages = [];
+let currentImageIndex = 0;
+
+// Placeholder image (a tiny transparent GIF in base64) for lazy loading
+const LAZY_LOAD_PLACEHOLDER = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+
+// Function to close mobile menu - moved to global scope
+function closeMobileMenu() {
+    const navLinks = document.getElementById('navigation-menu');
+    const hamburgerBtn = document.getElementById('mobile-menu-button');
+    if (navLinks) {
+        navLinks.classList.add("hidden"); // Use hidden for Tailwind toggle
+    }
+    if (hamburgerBtn) {
+        hamburgerBtn.classList.remove("active");
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+    }
+}
+
+// Function to show a specific page and hide others
 function showPage(pageId) {
-    // Hide all page sections
-    document.querySelectorAll('.page-section').forEach(section => {
+    const sections = document.querySelectorAll('.page-section');
+    sections.forEach(section => {
+        section.classList.remove('visible');
         section.style.display = 'none';
     });
 
-    // Show the requested page section
-    const activePage = document.getElementById(pageId);
-    if (activePage) {
-        activePage.style.display = 'block';
+    const activeSection = document.getElementById(pageId);
+    if (activeSection) {
+        activeSection.style.display = 'block';
+        // Trigger reflow to ensure transition plays
+        void activeSection.offsetWidth;
+        activeSection.classList.add('visible');
     }
 
-    // Update active navigation link styling
-    document.querySelectorAll('.nav-link').forEach(link => {
+    // Update active navigation link
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
         link.classList.remove('active');
+        link.classList.remove('text-amber-600'); // Remove specific color class
+        link.classList.remove('bg-amber-50'); // Remove specific background class
     });
-    const activeLink = document.querySelector(`.nav-link[onclick="showPage('${pageId}')"]`);
+
+    const activeLink = document.querySelector(`.nav-link[onclick*="showPage('${pageId}')"]`);
     if (activeLink) {
         activeLink.classList.add('active');
+        activeLink.classList.add('text-amber-600'); // Add specific color class
+        activeLink.classList.add('bg-amber-50'); // Add specific background class
     }
 
     // Close mobile menu if open
     closeMobileMenu();
+
+    // Scroll to top of the page smoothly
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Function to close the mobile menu
-function closeMobileMenu() {
-    const hamburgerBtn = document.getElementById('mobile-menu-button');
-    const navLinks = document.getElementById('navigation-menu');
-    if (hamburgerBtn && navLinks) {
-        hamburgerBtn.setAttribute("aria-expanded", "false");
-        hamburgerBtn.classList.remove("active");
-        navLinks.classList.remove("active"); // Ensure the active class is removed
-    }
-}
-
-
-// --- Dynamic Content Population ---
-
+// Function to populate catalogues dynamically
 function populateCatalogues() {
-    const container = document.getElementById('catalogues-container');
-    if (!container) return;
+    const catalogueGrid = document.getElementById('catalogue-grid');
+    if (!catalogueGrid) return;
+    catalogueGrid.innerHTML = ''; // Clear existing content
 
     catalogues.forEach(catalogue => {
         const card = document.createElement('div');
-        card.className = `catalogue-card bg-${catalogue.color} p-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105 cursor-pointer`;
+        card.className = 'bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer card';
         card.innerHTML = `
-            <h3 class="text-2xl font-semibold mb-2">${catalogue.name}</h3>
-            <p class="text-gray-700 mb-4">${catalogue.description}</p>
-            <button class="view-details-btn bg-amber-500 text-white py-2 px-4 rounded-full hover:bg-amber-600 transition duration-300">View Details</button>
-        `;
-        card.onclick = () => showCatalogueDetails(catalogue);
-        container.appendChild(card);
-    });
-}
-
-function showCatalogueDetails(catalogue) {
-    const mainContentArea = document.getElementById('main-content-area');
-    if (!mainContentArea) return;
-
-    // Create a new section for catalogue details
-    const detailSection = document.createElement('section');
-    detailSection.id = 'catalogue-detail-section';
-    detailSection.className = 'page-section py-16 px-6 md:px-12 bg-white fade-in';
-    detailSection.innerHTML = `
-        <div class="container mx-auto">
-            <button onclick="showPage('fabrics')" class="bg-gray-200 text-gray-800 py-2 px-4 rounded-full mb-8 hover:bg-gray-300 transition duration-300">
-                <i class="fas fa-arrow-left mr-2"></i> Back to Catalogues
-            </button>
-            <h2 class="text-4xl font-extrabold text-center mb-12 section-title">${catalogue.name} Collection</h2>
-            <p class="text-xl text-gray-700 text-center mb-10">${catalogue.description}</p>
-            <div id="catalogue-images-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                </div>
-        </div>
-    `;
-
-    // Hide all existing sections and append the new detail section
-    document.querySelectorAll('.page-section').forEach(section => {
-        section.style.display = 'none';
-    });
-    mainContentArea.appendChild(detailSection);
-    detailSection.style.display = 'block';
-
-    const imagesContainer = document.getElementById('catalogue-images-container');
-    if (imagesContainer) {
-        catalogue.codes.forEach(code => {
-            const imageUrl = catalogue.specificImages[code];
-            if (imageUrl) {
-                const imgWrapper = document.createElement('div');
-                imgWrapper.className = 'relative group cursor-pointer overflow-hidden rounded-lg shadow-md transition duration-300 transform hover:scale-105';
-                imgWrapper.innerHTML = `
-                    <img src="${imageUrl}" alt="${catalogue.name} Design ${code}" class="w-full h-48 object-cover rounded-lg">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span class="text-white text-lg font-bold">Code: ${code}</span>
-                    </div>
-                `;
-                imgWrapper.onclick = () => openImageModal(imageUrl, catalogue.name, code, catalogue);
-                imagesContainer.appendChild(imgWrapper);
-            }
-        });
-    }
-}
-
-function populatePortfolio() {
-    const container = document.getElementById('portfolio-container');
-    if (!container) return;
-
-    portfolioItems.forEach(item => {
-        const card = document.createElement('div');
-        card.className = `portfolio-card bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 cursor-pointer`;
-        card.innerHTML = `
-            <img src="${item.image}" alt="${item.title}" class="w-full h-56 object-cover">
             <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">${item.title}</h3>
-                <p class="text-gray-700">${item.description}</p>
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">${catalogue.name}</h3>
+                <p class="text-gray-600 text-base mb-4">${catalogue.description}</p>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+                    ${catalogue.codes.length} Designs
+                </span>
             </div>
         `;
-        card.onclick = () => openImageModal(item.image, item.title, null, null); // Pass null for code and catalogue for portfolio
-        container.appendChild(card);
+        card.addEventListener('click', () => showCatalogueDetails(catalogue));
+        catalogueGrid.appendChild(card);
+    });
+}
+
+// Function to show catalogue details
+function showCatalogueDetails(catalogue) {
+    currentCatalogue = catalogue; // Set the current catalogue
+    document.getElementById('catalogue-detail-title').textContent = `${catalogue.name} Collection`;
+    const designGrid = document.getElementById('catalogue-design-grid');
+    designGrid.innerHTML = ''; // Clear previous designs
+
+    // Populate currentCatalogueImages for navigation
+    currentCatalogueImages = [];
+    catalogue.codes.forEach(code => {
+        let imageUrl;
+        if (catalogue.specificImages && catalogue.specificImages[code]) {
+            imageUrl = catalogue.specificImages[code];
+        } else {
+            imageUrl = `https://placehold.co/300x300/${catalogue.color}/374151?text=Design+${code}`;
+        }
+        currentCatalogueImages.push({ url: imageUrl, alt: `${catalogue.name} Design ${code}` });
+    });
+
+    currentCatalogueImages.forEach((image, index) => {
+        const designItem = document.createElement('div');
+        designItem.className = 'relative group rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300 cursor-pointer';
+        designItem.innerHTML = `
+            <img class="w-full h-40 object-cover lazy-load-img" 
+                 src="${LAZY_LOAD_PLACEHOLDER}" 
+                 data-src="${image.url}" 
+                 alt="${image.alt}" 
+                 onerror="this.onerror=null;this.src='https://placehold.co/300x300/${catalogue.color}/374151?text=Image+Not+Found';">
+            <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-lg font-semibold">Code: ${catalogue.codes[index]}</p>
+            </div>
+        `;
+        // Pass the index to openImageModal for catalogue navigation
+        designItem.addEventListener('click', () => openImageModal(image.url, image.alt, index));
+        designGrid.appendChild(designItem);
+    });
+    showPage('catalogue-details');
+    // After populating, initialize lazy loading for the new images
+    initLazyLoadImages();
+}
+
+// Function to populate portfolio items
+function populatePortfolio() {
+    const portfolioGrid = document.getElementById('portfolio-grid');
+    if (!portfolioGrid) return;
+    portfolioGrid.innerHTML = ''; // Clear existing content
+
+    portfolioItems.forEach(item => {
+        const portfolioCard = document.createElement('div');
+        portfolioCard.className = 'bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 cursor-pointer card';
+        portfolioCard.innerHTML = `
+            <img src="${item.imageUrl}" alt="${item.title}" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">${item.title}</h3>
+                <p class="text-gray-600 text-sm mb-4">${item.description}</p>
+                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700">
+                    ${item.category}
+                </span>
+            </div>
+        `;
+        // For portfolio, we don't need catalogue navigation, so pass null for index
+        portfolioCard.addEventListener('click', () => openImageModal(item.imageUrl, item.title, null));
+        portfolioGrid.appendChild(portfolioCard);
     });
 }
 
 // --- Image Modal Functionality ---
-let modal, modalImage, modalCaption, currentIndex, currentImages;
-let scale = 1;
-let translateX = 0;
-let translateY = 0;
+const modal = document.getElementById('image-modal');
+const modalImage = document.getElementById('modal-image');
+const modalCloseButton = document.getElementById('modal-close-button');
+const modalPrevButton = document.getElementById('modal-prev-button');
+const modalNextButton = document.getElementById('modal-next-button');
+const modalImageCounter = document.getElementById('modal-image-counter');
+
 let isDragging = false;
 let startX, startY;
+let currentX = 0;
+let currentY = 0;
+let scale = 1;
 
-document.addEventListener('DOMContentLoaded', () => {
-    modal = document.getElementById('image-modal');
-    modalImage = document.getElementById('modal-image');
-    modalCaption = document.getElementById('modal-caption');
-    const prevButton = document.getElementById('modal-prev-btn');
-    const nextButton = document.getElementById('modal-next-btn');
-    const closeButton = document.getElementById('modal-close-button');
-
-    if (closeButton) {
-        closeButton.addEventListener('click', closeImageModal);
-    }
-    if (prevButton) {
-        prevButton.addEventListener('click', showPrevImage);
-    }
-    if (nextButton) {
-        nextButton.addEventListener('click', showNextImage);
-    }
-    if (modalImage) {
-        modalImage.addEventListener('wheel', handleZoom);
-        modalImage.addEventListener('mousedown', startDrag);
-        modalImage.addEventListener('mouseup', endDrag);
-        modalImage.addEventListener('mouseleave', endDrag); // End drag if mouse leaves image
-        modalImage.addEventListener('mousemove', drag);
-        // Touch events for mobile
-        modalImage.addEventListener('touchstart', startDrag);
-        modalImage.addEventListener('touchend', endDrag);
-        modalImage.addEventListener('touchcancel', endDrag);
-        modalImage.addEventListener('touchmove', drag);
-    }
-});
-
-
-function openImageModal(imageUrl, title, code, catalogue) {
-    if (!modal || !modalImage || !modalCaption) {
-        console.error("Modal elements not found!");
-        return;
-    }
-
-    modalImage.src = imageUrl;
-    modalCaption.textContent = code ? `${title} (Code: ${code})` : title;
-
-    // Determine currentImages array based on whether it's a catalogue or portfolio
-    if (catalogue) {
-        currentImages = catalogue.codes.map(c => ({
-            url: catalogue.specificImages[c],
-            title: catalogue.name,
-            code: c
-        })).filter(item => item.url); // Filter out any undefined URLs
-        currentIndex = currentImages.findIndex(item => item.url === imageUrl);
-    } else {
-        // Assume it's a portfolio item if no catalogue is provided
-        currentImages = portfolioItems.map(item => ({
-            url: item.image,
-            title: item.title,
-            code: null // Portfolio items don't have codes
-        }));
-        currentIndex = currentImages.findIndex(item => item.url === imageUrl);
-    }
-
-    resetImageTransform();
+/**
+ * Opens the image modal.
+ * @param {string} src - The URL of the image to display.
+ * @param {string} alt - The alt text for the image.
+ * @param {number | null} index - The index of the image in the currentCatalogueImages array.
+ * If null, it's a single image view (e.g., from portfolio).
+ */
+function openImageModal(src, alt, index) {
+    modalImage.src = src;
+    modalImage.alt = alt;
     modal.classList.remove('hidden');
-    document.body.classList.add('overflow-hidden'); // Prevent background scrolling
+    document.body.classList.add('overflow-hidden'); // Prevent scrolling body
+    
+    // Reset image position and scale
+    scale = 1;
+    currentX = 0;
+    currentY = 0;
+    modalImage.style.transform = `translate(0px, 0px) scale(1)`;
+    modalImage.style.cursor = 'grab';
+
+    // Set up catalogue navigation if an index is provided
+    if (index !== null && currentCatalogueImages.length > 0) {
+        currentImageIndex = index;
+        updateModalImageAndCounter();
+        modalPrevButton.style.display = 'flex'; // Show buttons
+        modalNextButton.style.display = 'flex';
+        modalImageCounter.style.display = 'block';
+    } else {
+        // Hide navigation for single image views (e.g., portfolio)
+        modalPrevButton.style.display = 'none';
+        modalNextButton.style.display = 'none';
+        modalImageCounter.style.display = 'none';
+    }
 }
 
 function closeImageModal() {
-    if (modal) {
-        modal.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
-    }
-    resetImageTransform(); // Reset transform when closing
+    modal.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden'); // Restore body scrolling
+    // Clear catalogue image data when modal is closed
+    currentCatalogueImages = [];
+    currentImageIndex = 0;
 }
 
-function showNextImage() {
-    if (currentImages && currentImages.length > 0) {
-        currentIndex = (currentIndex + 1) % currentImages.length;
-        const nextItem = currentImages[currentIndex];
-        openImageModal(nextItem.url, nextItem.title, nextItem.code,
-            nextItem.code ? catalogues.find(cat => cat.name === nextItem.title) : null);
-    }
-}
+/**
+ * Updates the modal image and counter based on currentImageIndex.
+ */
+function updateModalImageAndCounter() {
+    if (currentCatalogueImages.length === 0) return;
 
-function showPrevImage() {
-    if (currentImages && currentImages.length > 0) {
-        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-        const prevItem = currentImages[currentIndex];
-        openImageModal(prevItem.url, prevItem.title, prevItem.code,
-            prevItem.code ? catalogues.find(cat => cat.name === prevItem.title) : null);
-    }
-}
+    const image = currentCatalogueImages[currentImageIndex];
+    modalImage.src = image.url;
+    modalImage.alt = image.alt;
+    modalImageCounter.textContent = `${currentImageIndex + 1} of ${currentCatalogueImages.length}`;
 
-function resetImageTransform() {
+    // Reset image position and scale on image change
     scale = 1;
-    translateX = 0;
-    translateY = 0;
-    if (modalImage) {
-        modalImage.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
-        modalImage.style.cursor = 'grab';
-    }
+    currentX = 0;
+    currentY = 0;
+    modalImage.style.transform = `translate(0px, 0px) scale(1)`;
 }
 
-function handleZoom(event) {
-    event.preventDefault(); // Prevent page scrolling
+/**
+ * Shows the next image in the current catalogue.
+ */
+function showNextImage() {
+    if (currentCatalogueImages.length === 0) return;
+    currentImageIndex = (currentImageIndex + 1) % currentCatalogueImages.length;
+    updateModalImageAndCounter();
+}
+
+/**
+ * Shows the previous image in the current catalogue.
+ */
+function showPreviousImage() {
+    if (currentCatalogueImages.length === 0) return;
+    currentImageIndex = (currentImageIndex - 1 + currentCatalogueImages.length) % currentCatalogueImages.length;
+    updateModalImageAndCounter();
+}
+
+
+// Event listeners for image modal
+modalCloseButton.addEventListener('click', closeImageModal);
+modalPrevButton.addEventListener('click', showPreviousImage);
+modalNextButton.addEventListener('click', showNextImage);
+
+
+modalImage.addEventListener('wheel', (e) => {
+    e.preventDefault(); // Prevent page scrolling
     const scaleAmount = 0.1;
-    const oldScale = scale;
-    if (event.deltaY < 0) {
-        scale += scaleAmount; // Zoom in
-    } else {
-        scale = Math.max(0.5, scale - scaleAmount); // Zoom out, min scale 0.5
-    }
+    const mouseX = e.clientX - modalImage.getBoundingClientRect().left;
+    const mouseY = e.clientY - modalImage.getBoundingClientRect().top;
 
-    // Adjust translation to zoom towards cursor
-    const rect = modalImage.getBoundingClientRect();
-    const mouseX = event.clientX - rect.left;
-    const mouseY = event.clientY - rect.top;
+    // Calculate new scale
+    let newScale = scale + (e.deltaY * -0.01 * scaleAmount);
+    newScale = Math.max(0.5, Math.min(newScale, 3)); // Limit zoom between 0.5x and 3x
 
-    translateX += (mouseX - rect.width / 2 - translateX) * (1 - scale / oldScale);
-    translateY += (mouseY - rect.height / 2 - translateY) * (1 - scale / oldScale);
+    // Calculate new position to zoom towards mouse
+    const ratioX = mouseX / (modalImage.offsetWidth * scale);
+    const ratioY = mouseY / (modalImage.offsetHeight * scale);
 
-    applyTransform();
-}
+    currentX -= (modalImage.offsetWidth * (newScale - scale)) * ratioX;
+    currentY -= (modalImage.offsetHeight * (newScale - scale)) * ratioY;
 
-function startDrag(event) {
-    if (scale > 1) { // Only allow drag if zoomed in
-        isDragging = true;
-        modalImage.style.cursor = 'grabbing';
-        startX = event.clientX || event.touches[0].clientX;
-        startY = event.clientY || event.touches[0].clientY;
-    }
-}
-
-function drag(event) {
-    if (!isDragging) return;
-    event.preventDefault(); // Prevent default touch behavior (e.g., scrolling)
-
-    const clientX = event.clientX || event.touches[0].clientX;
-    const clientY = event.clientY || event.touches[0].clientY;
-
-    const dx = clientX - startX;
-    const dy = clientY - startY;
-
-    translateX += dx;
-    translateY += dy;
-
-    // Optional: Add boundary checks to prevent dragging image completely off-screen
-    // This part can be complex and depends on desired behavior.
-    // For simplicity, we're not adding full boundary checks here.
-
-    applyTransform();
-
-    startX = clientX;
-    startY = clientY;
-}
-
-function endDrag() {
-    isDragging = false;
-    if (scale > 1) {
-        modalImage.style.cursor = 'grab';
-    } else {
-        modalImage.style.cursor = 'default';
-    }
-}
-
-function applyTransform() {
-    if (modalImage) {
-        modalImage.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
-    }
-}
-
-
-// --- Contact Form Functionality ---
-function initContactForm() {
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-
-            // In a real application, you would send this data to a server
-            // For this example, we'll just show a success message
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
-
-            console.log('Form Submitted!', { name, email, phone, message });
-
-            showMessageModal('Message Sent!', 'Thank you for contacting us. We will get back to you shortly.');
-
-            contactForm.reset(); // Clear the form
-        });
-    }
-}
-
-// --- Message Modal Functionality ---
-let messageModal, messageModalTitle, messageModalText;
-
-document.addEventListener('DOMContentLoaded', () => {
-    messageModal = document.getElementById('message-modal');
-    messageModalTitle = document.getElementById('message-modal-title');
-    messageModalText = document.getElementById('message-modal-text');
+    scale = newScale;
+    modalImage.style.transform = `translate(${currentX}px, ${currentY}px) scale(${scale})`;
 });
 
-function showMessageModal(title, text) {
-    if (messageModal && messageModalTitle && messageModalText) {
-        messageModalTitle.textContent = title;
-        messageModalText.textContent = text;
-        messageModal.classList.add('visible'); // Use 'visible' class for showing
-        messageModal.classList.remove('hidden'); // Ensure hidden is removed if it was there
-        document.body.classList.add('overflow-hidden'); // Prevent background scrolling
-    }
+modalImage.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.clientX - currentX;
+    startY = e.clientY - currentY;
+    modalImage.style.cursor = 'grabbing';
+});
+
+modal.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    currentX = e.clientX - startX;
+    currentY = e.clientY - startY;
+    modalImage.style.transform = `translate(${currentX}px, ${currentY}px) scale(${scale})`;
+});
+
+modal.addEventListener('mouseup', () => {
+    isDragging = false;
+    modalImage.style.cursor = 'grab';
+});
+
+modal.addEventListener('mouseleave', () => {
+    isDragging = false; // Stop dragging if mouse leaves modal area
+    modalImage.style.cursor = 'grab';
+});
+
+// --- Custom Message Modal Functionality ---
+const messageModal = document.getElementById('message-modal');
+const messageModalTitle = document.getElementById('message-modal-title');
+const messageModalText = document.getElementById('message-modal-text');
+
+function showMessageModal(title, message) {
+    messageModalTitle.textContent = title;
+    messageModalText.textContent = message;
+    messageModal.classList.add('visible');
+    document.body.classList.add('overflow-hidden');
 }
 
 function closeMessageModal() {
-    if (messageModal) {
-        messageModal.classList.remove('visible'); // Use 'visible' class for hiding
-        messageModal.classList.add('hidden'); // Add hidden back for display: none
-        document.body.classList.remove('overflow-hidden');
-    }
+    messageModal.classList.remove('visible');
+    document.body.classList.remove('overflow-hidden');
 }
 
+// --- Carousel Functionality (Testimonials) ---
+let currentSlide = 0;
+let testimonialInterval;
 
-// --- Carousel Functionality (for Hero Section if applicable) ---
 function initCarousel() {
-    // This is a placeholder. If a carousel is added to the hero,
-    // its initialization logic would go here.
-    // For now, the hero section is static.
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dotsContainer = document.querySelector('.testimonial-dots');
+
+    if (!slides.length || !dotsContainer) return;
+
+    // Create dots
+    dotsContainer.innerHTML = ''; // Clear existing dots
+    slides.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.classList.add('testimonial-dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => showSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    showSlide(currentSlide);
+    startTestimonialCarousel();
 }
 
-// --- Fade-in Animation Observer ---
+function showSlide(index) {
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('.testimonial-dot');
+
+    if (!slides.length) return;
+
+    // Wrap around
+    if (index >= slides.length) currentSlide = 0;
+    else if (index < 0) currentSlide = slides.length - 1;
+    else currentSlide = index;
+
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === currentSlide) {
+            slide.classList.add('active');
+        }
+    });
+
+    dots.forEach((dot, i) => {
+        dot.classList.remove('active');
+        if (i === currentSlide) {
+            dot.classList.add('active');
+        }
+    });
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function startTestimonialCarousel() {
+    // Clear any existing interval to prevent multiple intervals running
+    clearInterval(testimonialInterval);
+    testimonialInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+}
+
+// Pause carousel on hover
+const testimonialSlider = document.querySelector('.testimonial-slider');
+if (testimonialSlider) {
+    testimonialSlider.addEventListener('mouseenter', () => clearInterval(testimonialInterval));
+    testimonialSlider.addEventListener('mouseleave', startTestimonialCarousel);
+}
+
+// --- Intersection Observer for Fade-in Animation ---
 function initFadeInObserver() {
-    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    const observerOptions = {
+        root: null, // viewport
+        rootMargin: '0px',
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    };
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target);
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once visible
+            }
+            // For elements that are already visible on load, ensure they have the 'visible' class
+            if (entry.intersectionRatio > 0) {
+                entry.target.classList.add('visible');
             }
         });
-    }, { threshold: 0.1 }); // Trigger when 10% of the element is visible
+    }, observerOptions);
 
-    fadeElements.forEach(element => {
+    fadeInElements.forEach(element => {
         observer.observe(element);
     });
 }
 
-// --- Google Pay Script Loading (Placeholder if needed) ---
-function loadGooglePayScript() {
-    // This function would load the Google Pay script if payments were integrated.
-    // For now, it's a placeholder to indicate where such logic would reside.
-    console.log("Google Pay script loading function called (placeholder).");
+// --- Lazy Loading for Images ---
+function initLazyLoadImages() {
+    const lazyImages = document.querySelectorAll('.lazy-load-img');
+
+    const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src; // Load the actual image
+                img.classList.remove('lazy-load-img'); // Remove class
+                observer.unobserve(img); // Stop observing
+            }
+        });
+    }, {
+        rootMargin: '0px 0px 100px 0px', // Load images when they are 100px from the viewport
+        threshold: 0.01 // Trigger when even a tiny bit is visible
+    });
+
+    lazyImages.forEach(img => {
+        lazyLoadObserver.observe(img);
+    });
 }
 
 
-// --- Main Initialization on DOM Load ---
-document.addEventListener('DOMContentLoaded', function() {
+// --- Contact Form Submission ---
+function initContactForm() {
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Simulate form submission
+            setTimeout(() => {
+                showMessageModal('Message Sent!', 'Thank you for contacting us. We will get back to you shortly.');
+                contactForm.reset(); // Clear the form
+            }, 500);
+        });
+    }
+}
+
+// --- Google Pay Integration ---
+let paymentsClient = null;
+
+// Function to dynamically load the Google Pay script
+function loadGooglePayScript() {
+    const script = document.createElement('script');
+    script.src = 'https://pay.google.com/gp/p/js/pay.js';
+    script.async = true;
+    script.onload = onGooglePayLoaded; // Initialize Google Pay after script loads
+    document.head.appendChild(script);
+}
+
+// Defines the allowed payment methods for Google Pay
+function getGoogleIsReadyToPayRequest() {
+    return {
+        apiVersion: 2,
+        apiVersionMinor: 0,
+        allowedPaymentMethods: [{
+            type: 'CARD',
+            parameters: {
+                allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS'],
+                allowedCardNetworks: ['AMEX', 'DISCOVER', 'INTERAC', 'JCB', 'MASTERCARD', 'VISA']
+            },
+            tokenizationSpecification: {
+                // IMPORTANT: For a live business, replace 'PAYMENT_GATEWAY' with your actual gateway type
+                // and provide the correct parameters for your chosen payment gateway (e.g., Stripe, Braintree).
+                // Consult your payment gateway's Google Pay integration guide for exact details.
+                type: 'PAYMENT_GATEWAY',
+                parameters: {
+                    'gateway': 'example', // REPLACE WITH YOUR ACTUAL PAYMENT GATEWAY (e.g., 'stripe', 'braintree')
+                    'gatewayMerchantId': 'exampleGatewayMerchantId' // REPLACE WITH YOUR ACTUAL GATEWAY MERCHANT ID
+                }
+            }
+        }]
+    };
+}
+
+// Defines the payment data request, including merchant info and transaction details
+function getGooglePaymentDataRequest() {
+    const paymentDataRequest = Object.assign({}, getGoogleIsReadyToPayRequest());
+    paymentDataRequest.merchantInfo = {
+        // A merchant ID is recommended for Production environments.
+        // This is your Google Merchant ID from the Google Pay & Wallet Console.
+        // For TEST environment, you can use a dummy ID.
+        merchantId: '01234567890123456789', // REPLACE WITH YOUR ACTUAL GOOGLE MERCHANT ID
+        merchantName: 'Curtain Story' // Your merchant name
+    };
+    paymentDataRequest.transactionInfo = {
+        totalPriceStatus: 'FINAL',
+        // IMPORTANT: This '100.00' should be dynamically generated based on the user's actual order total.
+        // Do NOT hardcode this in a production environment.
+        totalPrice: '100.00', 
+        currencyCode: 'INR', // Ensure this matches your business's currency
+        countryCode: 'IN' // Ensure this matches your business's country
+    };
+    // Callback intent to handle payment authorization on your server
+    // This is crucial for server-side processing of the payment token.
+    paymentDataRequest.callbackIntents = ["PAYMENT_AUTHORIZATION"]; 
+    return paymentDataRequest;
+}
+
+// Initializes the Google Pay API client and checks for readiness
+function onGooglePayLoaded() {
+    paymentsClient = new google.payments.api.PaymentsClient({
+        environment: 'TEST' // IMPORTANT: Change to 'PRODUCTION' for a live website
+    });
+
+    paymentsClient.isReadyToPay(getGoogleIsReadyToPayRequest())
+        .then(function(response) {
+            if (response.result) {
+                // If Google Pay is ready, show the button
+                const googlePayButton = document.getElementById('google-pay-button');
+                if (googlePayButton) {
+                    googlePayButton.style.display = 'flex'; // Make sure the button is visible
+                    googlePayButton.addEventListener('click', onGooglePaymentsButtonClicked);
+                }
+            } else {
+                // Google Pay is not available on this device/browser
+                console.warn('Google Pay is not ready to pay on this device.');
+                const googlePayButton = document.getElementById('google-pay-button');
+                if (googlePayButton) {
+                    googlePayButton.style.display = 'none'; // Hide the button if not available
+                }
+            }
+        })
+        .catch(function(err) {
+            console.error('Error checking Google Pay readiness:', err);
+        });
+}
+
+// Handles the Google Pay button click event
+function onGooglePaymentsButtonClicked() {
+    const paymentDataRequest = getGooglePaymentDataRequest();
+    // In a real application, you would dynamically update the totalPrice here
+    // based on the current order details before loading the payment data.
+    // Example: paymentDataRequest.transactionInfo.totalPrice = calculateCartTotal(); 
+
+    paymentsClient.loadPaymentData(paymentDataRequest)
+        .then(function(paymentData) {
+            // SUCCESS: User authorized payment.
+            // In a real application, you MUST send `paymentData.paymentMethodData.tokenizationData.token`
+            // to your backend server for processing the actual financial transaction with your payment gateway.
+            // This token contains the encrypted payment information.
+            console.log('Google Pay payment successful (mock):', paymentData);
+            showMessageModal('Payment Successful!', 'Thank you for your purchase! Your order has been placed.');
+
+            // Example of sending token to backend (pseudo-code):
+            /*
+            fetch('/your-backend-payment-endpoint', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    token: paymentData.paymentMethodData.tokenizationData.token,
+                    amount: paymentData.transactionInfo.totalPrice,
+                    currency: paymentData.transactionInfo.currencyCode
+                })
+            })
+            .then(response => response.json())
+            .then(backendResponse => {
+                if (backendResponse.success) {
+                    showMessageModal('Payment Processed!', 'Your payment was successfully processed by our system.');
+                } else {
+                    showMessageModal('Payment Error', 'There was an issue processing your payment. Please try again or contact support.');
+                }
+            })
+            .catch(error => {
+                console.error('Error sending payment to backend:', error);
+                showMessageModal('Network Error', 'Could not connect to the payment server. Please check your internet connection.');
+            });
+            */
+        })
+        .catch(function(err) {
+            // ERROR: User cancelled the payment or an error occurred during the transaction.
+            console.error('Google Pay transaction error:', err);
+            showMessageModal('Payment Failed', 'There was an issue with your Google Pay transaction. Please try again.');
+        });
+}
+
+
+// --- DOMContentLoaded Event Listener ---
+document.addEventListener('DOMContentLoaded', () => {
     // Set current year in footer
     const currentYearSpan = document.getElementById('current-year');
     if (currentYearSpan) {
@@ -1247,8 +1603,7 @@ document.addEventListener('DOMContentLoaded', function() {
             hamburgerBtn.setAttribute("aria-expanded", String(!expanded));
             hamburgerBtn.classList.toggle("active");
             if (navLinks) {
-                // Toggle the 'active' class which will be handled by CSS for transitions
-                navLinks.classList.toggle("active");
+                navLinks.classList.toggle("hidden"); // Toggle hidden class
             }
         });
     }
