@@ -391,7 +391,7 @@ body {
         --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple - kept */
         --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange - kept */
         --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink - kept */
-        --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan - kept */
+        --color-bg-8: rgba(6, 182, 212, 0.15); /* Dark cyan - kept */
         
         /* Semantic Color Tokens (Dark Mode) */
         --color-background: var(--color-charcoal-700);
@@ -952,7 +952,7 @@ textarea.form-control {
 /* Hero Section (adapted from style.css) */
 .hero {
     height: 100vh;
-    background-image: url('Cover_Photo/cover.jpg'); /* Updated hero image path */
+    background-image: url('cover_photo/cover.jpg'); /* Updated hero image path */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

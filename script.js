@@ -1009,6 +1009,7 @@ function closeMobileMenu() {
     const hamburgerBtn = document.getElementById('mobile-menu-button');
     if (navLinks) {
         navLinks.classList.add("hidden"); // Use hidden for Tailwind toggle
+        navLinks.classList.remove("active"); // Ensure active is removed
     }
     if (hamburgerBtn) {
         hamburgerBtn.classList.remove("active");
@@ -1603,7 +1604,8 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburgerBtn.setAttribute("aria-expanded", String(!expanded));
             hamburgerBtn.classList.toggle("active");
             if (navLinks) {
-                navLinks.classList.toggle("active"); // Toggle hidden class
+                navLinks.classList.toggle("active"); // Corrected to toggle 'active' class
+                navLinks.classList.toggle("hidden"); // Toggle hidden for larger screens
             }
         });
     }
