@@ -1,102 +1,49 @@
-/* Custom Styles */
-:root {
-    --brand-navy: #213043;
-    --brand-light: #f8f8f8;
-    --brand-gold: #caa56b;
-    --duration-normal: 250ms;
-    --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
-    --space-12: 12px;
-    --space-24: 24px;
-    --space-32: 32px;
-    --radius-base: 8px;
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+/* Custom Styles (Merged from style.css) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add your custom CSS here, or use @apply for Tailwind classes */
+
+/* Example of using @apply */
+.btn--primary {
+  @apply bg-amber-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105;
 }
 
+/* Your existing custom styles from style.css can go here as well */
+/* Base styles from the original HTML */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; /* Prioritize Inter as per original HTML */
     color: #374151; /* gray-700 */
     background-color: #f9fafb; /* gray-50 */
 }
-
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #9ca3af; /* gray-400 */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6b7280; /* gray-500 */
+}
 /* Hide sections by default, JavaScript will show the active one */
 .page-section {
     display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
 }
-
-.page-section.visible {
-    display: block;
-    opacity: 1;
-}
-
 /* Styling for active navigation link */
 .nav-link.active {
-    color: var(--brand-gold); /* Golden color */
-    font-weight: 600;
-    background-color: #fffbeb; /* Light amber for active background */
+    color: var(--brand-gold); /* Golden color from CSS variables */
+    font-weight: 600; /* Semi-bold */
+    background-color: #fffbeb; /* Light amber/golden for active background */
 }
 
-/* Header / Navbar */
-.navbar {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    border-bottom: 1px solid rgba(202, 165, 107, 0.2);
-}
-
-/* Hamburger Menu Icon Styling */
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: var(--brand-navy);
-    margin: 3px 0;
-    transition: 0.3s;
-    display: block;
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    background-image: url('https://images.unsplash.com/photo-1560185025-56d96a75f422?q=80&w=2070&auto=format&fit=crop');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-    color: white;
-}
-
-.hero__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(33, 48, 67, 0.6);
-}
-
-.hero__content {
-    position: relative;
-    z-index: 2;
-}
-
-/* Modal specific styles */
+/* Modal specific styles for a more robust experience */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -112,7 +59,7 @@ body {
 }
 
 .modal-content {
-    background-color: transparent;
+    background-color: transparent; /* No background for the content wrapper */
     width: 90vw;
     height: 90vh;
     display: flex;
@@ -127,16 +74,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: hidden; /* Crucial for containing the draggable image */
 }
 
 .modal-image {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
+    object-fit: contain; /* Ensures the image fits initially */
     cursor: grab;
-    transition: transform 0.1s ease-out;
-    transform-origin: center center;
+    transition: transform 0.1s ease-out; /* Smooth zoom/drag */
+    transform-origin: center center; /* Zoom from center */
     border-radius: 0.5rem;
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
@@ -153,7 +100,7 @@ body {
     font-size: 1.5rem;
     color: #333;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 1001; /* Above the image */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,26 +109,27 @@ body {
 }
 .modal-close-button:hover {
     transform: scale(1.1);
-    background-color: #f3f4f6;
+    background-color: #f3f4f6; /* gray-100 */
 }
 
+/* New styles for modal navigation controls */
 .modal-nav-controls {
     position: absolute;
-    bottom: 20px;
+    bottom: 20px; /* Position at the bottom */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 15px; /* Space between elements */
     z-index: 1001;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 9999px;
-    padding: 8px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 9999px; /* Fully rounded */
+    padding: 8px 20px; /* Padding inside the control bar */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .modal-nav-button {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2); /* Lighter, semi-transparent button */
     border: none;
     width: 40px;
     height: 40px;
@@ -194,6 +142,7 @@ body {
     align-items: center;
     transition: background-color 0.2s, transform 0.2s;
 }
+
 .modal-nav-button:hover {
     background-color: rgba(255, 255, 255, 0.4);
     transform: scale(1.1);
@@ -203,9 +152,10 @@ body {
     color: white;
     font-size: 1rem;
     font-weight: 500;
-    min-width: 60px;
+    min-width: 60px; /* Ensure space for text */
     text-align: center;
 }
+
 
 /* Custom Message Modal */
 .message-modal-overlay {
@@ -218,7 +168,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1002;
+    z-index: 1002; /* Higher than image modal */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -248,57 +198,418 @@ body {
 .message-modal-content h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #1f2937;
+    color: #1f2937; /* gray-900 */
     margin-bottom: 1rem;
 }
 
 .message-modal-content p {
     font-size: 1rem;
-    color: #4b5563;
+    color: #4b5563; /* gray-700 */
     margin-bottom: 1.5rem;
 }
 
 .message-modal-content button {
-    background-color: var(--brand-gold);
+    background-color: var(--brand-gold); /* Golden color from CSS variables */
     color: white;
     padding: 0.75rem 1.5rem;
-    border-radius: 9999px;
+    border-radius: 9999px; /* full rounded */
     font-weight: 600;
     transition: background-color 0.2s ease;
 }
 
 .message-modal-content button:hover {
-    background-color: #d49e41;
+    background-color: #d49e41; /* Slightly darker gold for hover */
 }
 
-/* Mobile Responsive Styles */
-@media (max-width: 767px) {
+
+/* BEGIN CSS from uploaded style.css */
+:root {
+    /* Primitive Color Tokens */
+    --color-white: rgba(255, 255, 255, 1);
+    --color-black: rgba(0, 0, 0, 1);
+    --color-cream-50: rgba(252, 252, 249, 1);
+    --color-cream-100: rgba(255, 255, 253, 1);
+    --color-gray-200: rgba(245, 245, 245, 1);
+    --color-gray-300: rgba(167, 169, 169, 1);
+    --color-gray-400: rgba(119, 124, 124, 1);
+    --color-slate-500: rgba(98, 108, 113, 1);
+    --color-brown-600: rgba(94, 82, 64, 1);
+    --color-charcoal-700: rgba(31, 33, 33, 1);
+    --color-charcoal-800: rgba(38, 40, 40, 1);
+    --color-slate-900: rgba(19, 52, 59, 1);
+    --color-teal-300: rgba(50, 184, 198, 1);
+    --color-teal-400: rgba(45, 166, 178, 1);
+    --color-teal-500: rgba(33, 128, 141, 1);
+    --color-teal-600: rgba(29, 116, 128, 1);
+    --color-teal-700: rgba(26, 104, 115, 1);
+    --color-teal-800: rgba(41, 150, 161, 1);
+    --color-red-400: rgba(255, 84, 89, 1);
+    --color-red-500: rgba(192, 21, 47, 1);
+    --color-orange-400: rgba(230, 129, 97, 1);
+    --color-orange-500: rgba(168, 75, 47, 1);
+
+    /* RGB versions for opacity control */
+    --color-brown-600-rgb: 94, 82, 64;
+    --color-teal-500-rgb: 33, 128, 141;
+    --color-slate-900-rgb: 19, 52, 59;
+    --color-slate-500-rgb: 98, 108, 113;
+    --color-red-500-rgb: 192, 21, 47;
+    --color-red-400-rgb: 255, 84, 89;
+    --color-orange-500-rgb: 168, 75, 47;
+    --color-orange-400-rgb: 230, 129, 97;
+
+    /* Background color tokens (Light Mode) */
+    --color-bg-1: rgba(245, 158, 11, 0.08); /* Light golden */
+    --color-bg-2: rgba(245, 158, 11, 0.08); /* Light yellow - kept */
+    --color-bg-3: rgba(34, 197, 94, 0.08); /* Light green - kept */
+    --color-bg-4: rgba(239, 68, 68, 0.08); /* Light red - kept */
+    --color-bg-5: rgba(147, 51, 234, 0.08); /* Light purple - kept */
+    --color-bg-6: rgba(249, 115, 22, 0.08); /* Light orange - kept */
+    --color-bg-7: rgba(236, 72, 153, 0.08); /* Light pink - kept */
+    --color-bg-8: rgba(6, 182, 212, 0.08); /* Light cyan - kept */
+    /* Semantic Color Tokens (Light Mode) */
+    --color-background: var(--color-cream-50);
+    --color-surface: var(--color-cream-100);
+    --color-text: var(--color-slate-900);
+    --color-text-secondary: var(--color-slate-500);
+    --color-primary: var(--brand-gold); /* Changed to brand-gold */
+    --color-primary-hover: #d49e41; /* Darker gold for hover */
+    --color-primary-active: #b8860b; /* Even darker gold for active */
+    --color-accent: var(--color-teal-500);
+    --color-border: var(--color-gray-200);
+    --color-success: rgba(34, 197, 94, 1);
+    --color-error: rgba(239, 68, 68, 1);
+    --color-info: rgba(6, 182, 212, 1);
+    --color-warning: rgba(245, 158, 11, 1);
+
+    /* Typography Scale */
+    --font-size-xs: 0.75rem;   /* 12px */
+    --font-size-sm: 0.875rem;  /* 14px */
+    --font-size-base: 1rem;    /* 16px */
+    --font-size-lg: 1.125rem;  /* 18px */
+    --font-size-xl: 1.25rem;   /* 20px */
+    --font-size-2xl: 1.5rem;   /* 24px */
+    --font-size-3xl: 1.875rem; /* 30px */
+    --font-size-4xl: 2.25rem;  /* 36px */
+    --font-size-5xl: 3rem;     /* 48px */
+    --font-size-6xl: 3.75rem;  /* 60px */
+    --font-size-7xl: 4.5rem;   /* 72px */
+    --font-size-8xl: 6rem;     /* 96px */
+    --font-size-9xl: 8rem;     /* 128px */
+
+    /* Spacing Scale */
+    --space-px: 1px;
+    --space-0-5: 0.125rem; /* 2px */
+    --space-1: 0.25rem;   /* 4px */
+    --space-1-5: 0.375rem; /* 6px */
+    --space-2: 0.5rem;    /* 8px */
+    --space-2-5: 0.625rem; /* 10px */
+    --space-3: 0.75rem;   /* 12px */
+    --space-3-5: 0.875rem; /* 14px */
+    --space-4: 1rem;      /* 16px */
+    --space-5: 1.25rem;   /* 20px */
+    --space-6: 1.5rem;    /* 24px */
+    --space-7: 1.75rem;   /* 28px */
+    --space-8: 2rem;      /* 32px */
+    --space-9: 2.25rem;   /* 36px */
+    --space-10: 2.5rem;   /* 40px */
+    --space-11: 2.75rem;  /* 44px */
+    --space-12: 3rem;     /* 48px */
+    --space-14: 3.5rem;   /* 56px */
+    --space-16: 4rem;     /* 64px */
+    --space-20: 5rem;     /* 80px */
+    --space-24: 6rem;     /* 96px */
+    --space-28: 7rem;     /* 112px */
+    --space-32: 8rem;     /* 128px */
+    --space-36: 9rem;     /* 144px */
+    --space-40: 10rem;    /* 160px */
+    --space-44: 11rem;    /* 176px */
+    --space-48: 12rem;    /* 192px */
+    --space-52: 13rem;    /* 208px */
+    --space-56: 14rem;    /* 224px */
+    --space-60: 15rem;    /* 240px */
+    --space-64: 16rem;    /* 256px */
+    --space-72: 18rem;    /* 288px */
+    --space-80: 20rem;    /* 320px */
+    --space-96: 24rem;    /* 384px */
+
+    /* Border Radii */
+    --border-radius-none: 0;
+    --border-radius-sm: 0.125rem;  /* 2px */
+    --border-radius-base: 0.25rem; /* 4px */
+    --border-radius-md: 0.375rem;  /* 6px */
+    --border-radius-lg: 0.5rem;    /* 8px */
+    --border-radius-xl: 0.75rem;   /* 12px */
+    --border-radius-2xl: 1rem;     /* 16px */
+    --border-radius-3xl: 1.5rem;   /* 24px */
+    --border-radius-full: 9999px;
+
+    /* Shadow tokens (assuming light mode only for now) */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --shadow-none: none;
+
+    /* Transitions */
+    --duration-fast: 150ms;
+    --duration-normal: 300ms;
+    --duration-slow: 500ms;
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+    /* Brand Colors */
+    --brand-gold: #caa56b;
+    --brand-light: #fefcf7; /* A very light cream/off-white for backgrounds */
+    --brand-dark: #5e4a32; /* A dark brown for accents or text */
+}
+
+/* Base styles from the original HTML */
+body {
+    font-family: 'Inter', sans-serif; /* Prioritize Inter as per original HTML */
+    color: #374151; /* gray-700 */
+    background-color: #f9fafb; /* gray-50 */
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #9ca3af; /* gray-400 */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6b7280; /* gray-500 */
+}
+
+/* Hide sections by default, JavaScript will show the active one */
+.page-section {
+    display: none;
+}
+
+/* Styling for active navigation link */
+.nav-link.active {
+    color: var(--brand-gold); /* Golden color from CSS variables */
+    font-weight: 600; /* Semi-bold */
+    background-color: #fffbeb; /* Light amber/golden for active background */
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    padding: 1rem 1.5rem;
+    box-shadow: var(--shadow-md);
+    position: sticky;
+    top: 0;
+    z-index: 50; /* Ensure it stays above other content */
+}
+
+.logo {
+    height: 3rem; /* Tailwind h-12 equivalent */
+}
+
+/* Hamburger menu icon */
+.hamburger {
+    display: none; /* Hidden by default on larger screens */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 60; /* Ensure it's above the nav links when open */
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--color-slate-900);
+    transition: all var(--duration-normal) ease-in-out;
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
+/* Navigation Links for Mobile */
+/* Adjusted for consistency with script.js toggling 'active' class directly */
+@media (max-width: 768px) {
     .nav-links {
-        /* This is the animated mobile menu container */
-        display: flex; /* Must be flex to allow flex-direction */
-        position: absolute; /* Position relative to the header */
-        top: 100%; /* Position right below the header */
+        position: fixed;
+        top: 70px; /* Adjust based on navbar height */
         left: 0;
         right: 0;
-        background: white;
+        background: var(--brand-light);
         flex-direction: column;
         padding: var(--space-24);
         box-shadow: var(--shadow-lg);
-        transform: translateY(-150%); /* Start further off-screen for a better slide-in effect */
+        transform: translateY(-100%); /* Start off-screen above */
         opacity: 0;
         visibility: hidden;
-        transition: transform 0.4s var(--ease-standard), opacity 0.4s var(--ease-standard), visibility 0.4s;
-        z-index: -1; /* Ensure it doesn't overlap content when hidden */
+        transition: transform var(--duration-normal) ease-in-out, opacity var(--duration-normal) ease-in-out, visibility var(--duration-normal) ease-in-out;
     }
 
     .nav-links.active {
-        /* This is the visible state of the mobile menu */
+        transform: translateY(0); /* Slide into view */
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    /* Keep the hamburger active states for rotation if needed, though they are above */
+}
+
+
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    background: url('https://images.unsplash.com/photo-1618220179428-5777ce3f2134?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+/* Catalogue Cards */
+.catalogue-card {
+    border: 1px solid var(--color-border);
+}
+
+/* Services Section */
+.service-card {
+    border: 1px solid var(--color-border);
+}
+
+/* About Us Section */
+.about-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Contact Section */
+.contact-form-container {
+    padding: var(--space-24);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-charcoal-800);
+    color: var(--color-cream-100);
+}
+
+.social-links a {
+    color: var(--color-cream-100);
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--brand-gold);
+    transform: scale(1.2);
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--brand-light);
+        flex-direction: column;
+        padding: var(--space-24);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all var(--duration-normal);
+    }
+
+    .nav-links.active {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
     }
 
     .hamburger {
-        display: flex; /* Ensure the hamburger is visible on mobile */
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-32);
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: var(--font-size-lg);
+    }
+
+    .section-title {
+        font-size: 2rem;
     }
 }
