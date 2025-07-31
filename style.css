@@ -7,7 +7,7 @@
 
 /* Example of using @apply */
 .btn--primary {
-  @apply bg-amber-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105;
+  @apply bg-gray-500 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105;
 }
 
 /* Your existing custom styles from style.css can go here as well */
@@ -38,9 +38,15 @@ body {
 }
 /* Styling for active navigation link */
 .nav-link.active {
-    color: var(--brand-gold); /* Golden color from CSS variables */
+    color: var(--brand-white); /* Golden color from CSS variables */
     font-weight: 600; /* Semi-bold */
-    background-color: #fffbeb; /* Light amber/golden for active background */
+    background-color: #25D366; /* Light amber/golden for active background */
+}
+
+/* New style for navigation link hover */
+.nav-links a:hover {
+    color: #808080; /* Gray color on hover */
+    background-color: transparent; /* Ensure no background on hover */
 }
 
 /* Modal specific styles for a more robust experience */
@@ -109,7 +115,7 @@ body {
 }
 .modal-close-button:hover {
     transform: scale(1.1);
-    background-color: #f3f4f6; /* gray-100 */
+    background-color: #f7edf1; /* gray-100 */
 }
 
 /* New styles for modal navigation controls */
@@ -625,13 +631,13 @@ a:hover {
 }
 
 .btn--primary {
-    background: var(--brand-gold);
-    color: var(--brand-navy);
+    background: #A52A2A; /* Blood Red */
+    color: #FFFFFF; /* White */
     font-weight: 600;
 }
 
 .btn--primary:hover {
-    background: var(--brand-navy);
+    background: #8B0000; /* Darker Blood Red on hover */
     color: var(--brand-light);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(33, 48, 67, 0.3);
@@ -924,7 +930,7 @@ textarea.form-control {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--brand-gold);
+    background: #25D366; /* WhatsApp green color */
     transition: width var(--duration-normal);
 }
 
@@ -1178,13 +1184,6 @@ textarea.form-control {
     transform: translateY(0);
 }
 
-.benefits-list span {
-    display: block;
-    font-weight: 600;
-    color: var(--brand-navy);
-    font-size: var(--font-size-lg);
-}
-
 /* Testimonials Section */
 .testimonials-section {
     background: var(--brand-navy);
@@ -1321,6 +1320,24 @@ textarea.form-control {
 .social-links a:hover {
     color: var(--brand-gold);
 }
+
+/* Specific colors for social media icons in the footer */
+.footer .social-links .fa-facebook-f {
+    color: #3b5998; /* Facebook Blue */
+}
+
+.footer .social-links .fa-instagram {
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Google My Business icon color */
+.footer .social-links .fa-google {
+    color: #DB4437; /* Google Red */
+}
+
 
 /* Animations */
 .fade-in {
